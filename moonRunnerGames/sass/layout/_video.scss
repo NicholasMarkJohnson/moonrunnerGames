@@ -1,0 +1,128 @@
+.video-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  // margin-top: 2rem;
+
+  & video#video {
+    height: 35rem;
+    border: 4px solid $color-lghtGry;
+  }
+
+  & .cover-img {
+    position: absolute;
+    // left: 0;
+    pointer-events: none;
+    width: 79%;
+    height: auto;
+  }
+
+  & .cover-img.hidden {
+    display: none;
+  }
+
+  & .screen {
+    cursor: pointer;
+    width: 80%;
+    background-color: $color-blk !important;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+}
+
+.controls {
+  background-color: $color-drkGry;
+  color: $color-wht;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border: 4px solid $color-lghtGry;
+  border-top: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 64%;
+  padding: 1rem;
+  margin-bottom: 4rem;
+
+  & #progress {
+    width: 75%;
+    margin: 0 1rem;
+  }
+
+  & .fa-play {
+    color: $color-playGrn;
+  }
+
+  & .fa-stop {
+    color: $color-stopRed;
+  }
+
+  & .fa-pause {
+    color: $color-wht;
+  }
+
+  & .timestamp {
+    color: $color-wht;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (width >= 200px) and (width < 840px) {
+  body {
+    padding: 1rem;
+  }
+  .video-wrapper {
+    width: 120%;
+
+    & video#video {
+      height: 35rem;
+    }
+    & #cover-img {
+      min-width: 78%;
+    }
+  }
+
+  .controls {
+    width: 96%;
+
+    & .btn-video {
+      font-size: 1rem;
+    }
+
+    & #progress {
+      min-width: 13rem;
+    }
+  }
+}
+
+@media only screen and (width >= 360px) and (width < 375px) {
+}
+
+@media only screen and (width >= 375px) and (width < 397px) {
+}
+
+@media only screen and (width >= 397px) and (width < 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (width >= 600px) and (width < 768px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (width >= 768px) and (width < 992px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (width >= 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (width >= 1160px) {
+}
+
+// Hamburger max-width 1000px
+@media (width < 1000px) {
+}
