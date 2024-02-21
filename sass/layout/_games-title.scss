@@ -1,0 +1,75 @@
+ul.slam {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0 0 0 1rem;
+
+  & li.slam-letter {
+    color: $color-drkGry;
+    margin: 2rem -0.7rem;
+    font-size: 8rem;
+    letter-spacing: 1.5rem;
+    line-height: 1;
+    animation: lighting 2.5s linear infinite;
+  }
+
+  span.slam-gap {
+    margin: 0 2rem;
+  }
+}
+
+@media only screen and (width >= 200px) and (width < 412px) {
+  ul.slam {
+    padding: 0 0 0 1rem;
+
+    & li.slam-letter {
+      margin: 1rem -0.7rem;
+      font-size: 3.5rem;
+    }
+
+    span.slam-gap {
+      margin: 0 0.3rem;
+    }
+  }
+}
+
+@media only screen and (width >= 412px) and (width < 508px) {
+  ul.slam {
+    padding: 0 0 0 1.6rem;
+
+    & li.slam-letter {
+      margin: 1rem -0.7rem;
+      font-size: 4.5rem;
+    }
+
+    span.slam-gap {
+      margin: 0 0.6rem;
+    }
+  }
+}
+
+@media only screen and (width >= 375px) and (width < 397px) {
+}
+
+@media only screen and (width >= 397px) and (width < 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (width >= 600px) and (width < 768px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (width >= 768px) and (width < 992px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (width >= 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (width >= 1160px) {
+}
+
+// Hamburger max-width 1000px
+@media (width < 1000px) {
+}

@@ -1,0 +1,139 @@
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin aboutPara {
+  color: $color-drkBlueOutline;
+  font-size: 2.2rem;
+  line-height: 1.5;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+@mixin bGLinearBlue {
+  background-image: linear-gradient(
+    to right,
+    rgba($color-midBlue, 1),
+    rgba($color-blueShoe, 0.2)
+  );
+}
+
+@mixin bGLinearBlueOrg {
+  background-image: linear-gradient(
+    to bottom,
+    rgba($color-midBlue, 1),
+    $color-bgOrg
+  );
+}
+
+@mixin bGLinearBlue3 {
+  background-image: linear-gradient(
+    to bottom,
+    rgba($color-skyBlu, 1),
+    $color-bgBlu3
+  );
+}
+
+@mixin bGLinearBlue3-A {
+  background-image: linear-gradient(
+    to top,
+    rgba($color-skyBlu, 1),
+    $color-bgBlu3
+  );
+}
+
+@mixin bGLinearBlue4 {
+  background-image: linear-gradient(to bottom, $color-bluBlk, $color-bgBlu3);
+}
+
+@mixin bGLinearBluePastRed {
+  background-image: linear-gradient(
+    to right,
+    rgba($color-midBlue, 1),
+    rgba($color-pastelRed, 0.8)
+  );
+}
+
+// @mixin bGLinearRed-toRight {
+//   background-image: linear-gradient(to right, $color-bgRed1, $color-bgRed2);
+// }
+
+// @mixin bGLinearYellow {
+//   background-image: linear-gradient(to top, $color-bgYell1, $color-bgYell2);
+// }
+
+@mixin bGLinearYellowGrn {
+  background-image: linear-gradient(to top, $color-bgYell1, $color-bgGrn);
+}
+
+@mixin bGLinearRedViolet-toRight {
+  background-image: linear-gradient(
+    to top,
+    $color-bgRed1,
+    rgba($color-violet, 0.6)
+  );
+}
+
+@mixin bGLinearRedViolet-toLeft {
+  background-image: linear-gradient(
+    to left,
+    $color-bgRed1,
+    rgba($color-violet, 0.6)
+  );
+}
+
+@mixin bGLinearRedViolet-toTop {
+  background-image: linear-gradient(
+    to top,
+    $color-bgRed1,
+    rgba($color-violet, 0.6)
+  );
+}
+
+@mixin highlight {
+  color: $color-lime;
+  font-style: italic;
+}
+
+@mixin bgSoftMetal {
+  background-image: conic-gradient(
+    at right center,
+    rgb(199, 210, 254),
+    rgb(71, 85, 105),
+    rgb(199, 210, 254)
+  );
+}
+
+@mixin bgPowderBlue {
+  background-image: radial-gradient(
+    at right top,
+    rgb(56, 189, 248),
+    rgb(30, 64, 175)
+  );
+}
+
+@mixin bgMidnight {
+  background-image: radial-gradient(
+    at right bottom,
+    rgb(29, 78, 216),
+    rgb(30, 64, 175),
+    rgb(17, 24, 39)
+  );
+}
+
+@mixin space {
+  background-image: radial-gradient(
+    at left top,
+    rgb(17, 24, 39),
+    rgb(75, 85, 99)
+  );
+}
