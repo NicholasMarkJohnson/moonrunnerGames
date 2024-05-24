@@ -38,7 +38,7 @@
 // Game title lighting
 @keyframes lighting {
   0% {
-    color: $color-drkGry;
+    color: $color-yellowMoonReColor;
     text-shadow: none;
   }
   90% {
@@ -90,7 +90,7 @@ ul.slam li.slam-letter:nth-child(13) {
 
 // contact form falling moons
 .container__animation {
-  background-color: $color-drkGry;
+  background-color: $color-bluNav;
   position: relative;
   width: 100%;
   overflow: hidden;

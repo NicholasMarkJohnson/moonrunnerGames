@@ -6,7 +6,7 @@
     "box-top box-bottom"
     "box-what-we box-what-we";
   gap: 1rem;
-  background-color: $color-wht;
+  // background-color: $color-wht;
 
   & .about-box {
     min-height: 35rem;
@@ -59,10 +59,10 @@
     justify-content: space-around;
     text-align: center;
     max-height: 35rem;
-    background-color: $color-drkBlueOutline;
-    // border-bottom-right-radius: 0;
-    // border-top-right-radius: 0;
-    @include bGLinearBlue3;
+    // background-color: $color-drkBlueOutline;
+    // @include bGLinearBlue3;
+    background-color: #001b400d;
+    background-image: linear-gradient(to bottom, #86bdd66b, rgb(33 140 204 / 43%));
   }
 
   & .about-box-bottom {
@@ -72,15 +72,11 @@
     justify-content: space-around;
     text-align: center;
     max-height: 35rem;
-    background-color: $color-drkBlueOutline;
-    // border-bottom-left-radius: 0;
-    // border-top-left-radius: 0;
-    @include bGLinearBlue3;
-    // background-image: linear-gradient(
-    //   to right,
-    //   rgba($color-midBlue, 1),
-    //   rgba($color-blueShoe, 0.2)
-    // );
+    // background-color: $color-drkBlueOutline;
+    // @include bGLinearBlue3;
+    background-color: #001b400d;
+    background-image: linear-gradient(to bottom, #86bdd66b, rgb(33 140 204 / 43%));
+
 
     & .about-header-box {
       margin-left: 1.6rem;
@@ -94,13 +90,8 @@
     justify-content: flex-start;
     align-items: center;
     // margin-top: 1rem;
-    background-color: $color-lghtGry;
-    // @include bGLinearYellowGrn;
-    // background-image: linear-gradient(
-    //   to bottom,
-    //   rgba($color-midBlue, 0.8),
-    //   rgba($color-blueShoe, 0.1)
-    // );
+    background-color: #e7e7e7c2;
+
     & > h2 {
       color: $color-drkBlueOutline;
       font-size: 3.5rem;
@@ -216,11 +207,8 @@
     }
 
     & .about-box-bottom {
-      background-image: linear-gradient(
-        to top,
-        #86bdd6,
-        rgba(33, 140, 204, 0.8)
-      );
+      background-color: #001b400d;
+      background-image: linear-gradient(to bottom, #86bdd66b, rgb(33 140 204 / 43%));
     }
 
     & .about-box .about-img-box img.logo {
@@ -248,9 +236,9 @@
       }
     }
 
-    & .about-what-we .what-we-box .we-box:not(:last-child):not(:last-child) {
-      border-bottom: 1px solid $color-wht;
-    }
+    // & .about-what-we .what-we-box .we-box:not(:last-child):not(:last-child) {
+    //   border-bottom: 1px solid $color-drkBlueOutline;
+    // }
 
     & .about-what-we > h2 {
       font-size: 3rem;
@@ -267,11 +255,8 @@
   .container-about {
     & .about-box-bottom {
       flex-direction: row-reverse;
-      background-image: linear-gradient(
-        to top,
-        #86bdd6,
-        rgba(33, 140, 204, 0.8)
-      );
+      background-color: #001b400d;
+      background-image: linear-gradient(to bottom, #86bdd66b, rgb(33 140 204 / 43%));
     }
   }
 }
@@ -303,17 +288,17 @@
       align-items: unset;
     }
 
-    & .about-what-we .what-we-box .box-circle {
-      background-color: $color-wht;
-      border: 4px solid $color-wht;
-      height: 1rem;
-      width: 1rem;
-      border-radius: 50%;
-      top: 48%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      position: absolute;
-    }
+    // & .about-what-we .what-we-box .box-circle {
+    //   background-color: $color-wht;
+    //   border: 4px solid $color-wht;
+    //   height: 1rem;
+    //   width: 1rem;
+    //   border-radius: 50%;
+    //   top: 48%;
+    //   left: 50%;
+    //   transform: translate(-50%, -50%);
+    //   position: absolute;
+    // }
 
     & .about-what-we .what-we-box .we-box {
       display: flex;
@@ -332,50 +317,50 @@
         right: -1.3rem;
       }
     }
-    & .about-what-we .what-we-box .box-1 {
-      border-right: 2px solid $color-wht;
-      border-bottom: 2px solid $color-wht;
-    }
-    & .about-what-we .what-we-box .box-2 {
-      border-bottom: 2px solid $color-wht;
-      border-left: 2px solid $color-wht;
-    }
-    & .about-what-we .what-we-box .box-3 {
-      border-right: 2px solid $color-wht;
-      border-top: 2px solid $color-wht;
-    }
-    & .about-what-we .what-we-box .box-4 {
-      border-left: 2px solid $color-wht;
-      border-top: 2px solid $color-wht;
-    }
+    // & .about-what-we .what-we-box .box-1 {
+    //   border-right: 2px solid $color-drkGry;
+    //   border-bottom: 2px solid $color-drkGry;
+    // }
+    // & .about-what-we .what-we-box .box-2 {
+    //   border-bottom: 2px solid $color-drkGry;
+    //   border-left: 2px solid $color-drkGry;
+    // }
+    // & .about-what-we .what-we-box .box-3 {
+    //   border-right: 2px solid $color-drkGry;
+    //   border-top: 2px solid $color-drkGry;
+    // }
+    // & .about-what-we .what-we-box .box-4 {
+    //   border-left: 2px solid $color-drkGry;
+    //   border-top: 2px solid $color-drkGry;
+    // }
   }
 }
 // Circle
-@media only screen and (width >= 602px) and (width <= 616px) {
-  .container-about .about-what-we .what-we-box .box-circle {
-    top: 50%;
-  }
-}
-@media only screen and (width >= 617px) and (max-width: 708px) {
-  .container-about .about-what-we .what-we-box .box-circle {
-    top: 48%;
-  }
-}
-@media only screen and (width > 708px) and (max-width: 959px) {
-  .container-about .about-what-we .what-we-box .box-circle {
-    top: 50%;
-  }
-}
-@media only screen and (width >= 959px) and (max-width: 1041px) {
-  .container-about .about-what-we .what-we-box .box-circle {
-    top: 27.8rem;
-  }
-}
-@media only screen and (width > 1041px) and (max-width: 1056px) {
-  .container-about .about-what-we .what-we-box .box-circle {
-    top: 27.8rem;
-  }
-}
+// @media only screen and (width >= 602px) and (width <= 616px) {
+//   .container-about .about-what-we .what-we-box .box-circle {
+//     top: 50%;
+//   }
+// }
+// @media only screen and (width >= 617px) and (max-width: 708px) {
+//   .container-about .about-what-we .what-we-box .box-circle {
+//     top: 48%;
+//   }
+// }
+// @media only screen and (width > 708px) and (max-width: 959px) {
+//   .container-about .about-what-we .what-we-box .box-circle {
+//     top: 50%;
+//   }
+// }
+// @media only screen and (width >= 959px) and (max-width: 1041px) {
+//   .container-about .about-what-we .what-we-box .box-circle {
+//     top: 27.8rem;
+//   }
+// }
+// @media only screen and (width > 1041px) and (max-width: 1056px) {
+//   .container-about .about-what-we .what-we-box .box-circle {
+//     top: 27.8rem;
+//   }
+// }
 
 // @media only screen and (width >= 375px) and (width < 397px) {
 // }

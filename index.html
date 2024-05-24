@@ -14,73 +14,123 @@
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/css/main.css">
     <title>Moonrunner Games | Home</title>
   </head>
 
   <body>
-    <!-- Hero -->
+    <!-- Hero --> 
     <section class="hero" id="home">
       <!-- logo container img and h1 -->
-      <div class="hero-logo-box">
+      <!-- <div class="hero-logo-box">
         <img
           src="./img/mascotEdit.png"
           alt="Moonrunner Games logo"
           class="hero-logo"
         />
         <h1 class="hero-logo-heading">Moonrunner <br />Games</h1>
-      </div>
+      </div> -->
 
-      <div class="hero-navBar">
-        <!-- Add active ID remove btn-white class -->
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <a href="index.html" id="active" class="btn hero-btn">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="/html/games.html" class="btn hero-btn btn-white">Games</a>
-          </li>
-          <li class="nav-item">
-            <a href="/html/about.html" class="btn hero-btn btn-white">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="/html/contact.html" class="btn hero-btn btn-white">Contact</a>
-          </li>
-        </ul>
-        <ul class="hamburger__nav-menu" id="ulBurger">
-          <li class="hamburger__nav-item">
-            <a href="index.html" class="nav-link" data-text="Home">Home</a>
-          </li>
-          <li class="hamburger__nav-item">
-            <a href="/html/games.html" class="nav-link" data-text="Games">Games</a>
-          </li>
-          <li class="hamburger__nav-item">
-            <a href="/html/about.html" class="nav-link" data-text="About">About</a>
-          </li>
-          <li class="hamburger__nav-item">
-            <a href="/html/contact.html" class="nav-link" data-text="Contact"
-              >Contact</a
-            >
-          </li>
-        </ul>
-
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+      <nav class="nav">
+        <div class="nav-logo">
+          <img src="../img/mascotEdit.png" alt="logo" class="mascott" />
+          <h1 class="nav-logo-heading">Moonrunner <br />Games</h1>
         </div>
-      </div>
-      <div class="hero-heading-text">
-        <h3 class="footprints glow">
-          Don't say<br />
-          the sky's the limit <br />
-          when there are<br />
-          footprints <br />
-          on the moon
-        </h3>
-      </div>
-    </section>
+        <div class="nav-btns nav__navBar">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-btn btn about-btn btn-white"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="/html/games.html" id="active" class="nav-btn btn about-btn"
+                >Games</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="/html/about.html" class="nav-btn btn about-btn btn-white"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="/html/contact.html" class="nav-btn btn about-btn btn-white"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <ul class="hamburger__nav-menu">
+            <li class="hamburger__nav-item">
+              <a href="index.html" class="nav-link" data-text="Home">Home</a>
+            </li>
+            <li class="hamburger__nav-item">
+              <a href="/html/games.html" class="nav-link" data-text="Games">Games</a>
+            </li>
+            <li class="hamburger__nav-item">
+              <a href="/html/about.html" class="nav-link" data-text="About">About</a>
+            </li>
+            <li class="hamburger__nav-item">
+              <a href="/html/contact.html" class="nav-link" data-text="Contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+    
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
 
+      <main>
+        <div class="mars">
+          <div class="spaceship__container">
+            <img src="https://assets.codepen.io/1538474/spaceship.svg" class="spaceship" />
+          </div>
+        </div>
+      </main>
+      <footer id="main-footer">
+        <div class="footer">
+          <div class="footer-logo">
+            <img src="../img/mascotEdit.png" alt="logo" />
+            <h2 class="footer-logo-heading">Moonrunner Games</h2>
+          </div>
+          <div class="social">
+            <a title="App Store" href="#" target="_blank" class="footer-btns"
+              ><i class="fab fa-app-store footer-btn"></i
+            ></a>
+            <a title="Google Play" href="#" target="_blank" class="footer-btns"
+              ><i class="fab fa-google-play footer-btn"></i
+            ></a>
+            <a
+              title="YouTube"
+              href="https://www.youtube.com/embed/UStsTY0DZOU"
+              target="_blank"
+              class="footer-btns"
+            >
+              <i class="fab fa-youtube footer-btn"></i>
+            </a>
+            <!-- <i class="fab fa-instagram"></i> -->
+            <a
+              title="Instagram"
+              href="https://www.instagram.com/moonrunnergames/"
+              target="_blank"
+              class="footer-btns"
+            >
+              <i class="fab fa-instagram footer-btn"></i>
+            </a>
+          </div>
+          <div class="copy">
+            <p>
+              Copyright&copy; 2024 Moonrunner Games, Inc Trademarks belong to
+              their respective owners. All Rights Reserved
+            </p>
+          </div>
+        </div>
+      </footer>
+    </section>
     <!-- Scripts -->
     <script
       src="https://kit.fontawesome.com/e4f739f6f0.js"

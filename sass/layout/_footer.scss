@@ -2,12 +2,13 @@
   padding: 1rem 2rem 0;
   border-bottom-left-radius: 0.4rem;
   border-bottom-right-radius: 0.4rem;
-  background-color: $color-footGry;
+  // background-color: $color-footGry;
   // margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  min-width: 100%;
+  // min-width: 100%;
   max-height: 24.3rem;
+  margin: 0 auto 1rem;
   justify-content: flex-end;
   align-items: center;
   position: relative;
@@ -19,7 +20,7 @@
     // margin-top: 1rem;
 
     img {
-      max-width: 7rem;
+      max-width: 5rem;
       top: 19px;
       position: relative;
     }
@@ -29,7 +30,7 @@
       line-height: 1;
       text-align: center;
       // margin-top: 6rem;
-      font-size: 4rem;
+      font-size: 3rem;
     }
   }
 
@@ -41,8 +42,8 @@
 
     & a > i {
       display: inline-block;
-      margin: 3rem 0;
-      font-size: 3.5rem;
+      margin: 1rem 0;
+      font-size: 2.5rem;
 
       &:hover {
         cursor: pointer;
@@ -79,7 +80,7 @@
   }
 
   .copy {
-    color: $color-lghtGry;
+    color: $color-drkGry;
     text-align: center;
   }
 }
@@ -95,25 +96,103 @@
   }
 }
 
-@media only screen and (width >= 360px) and (width < 375px) {
+// Galaxy Z fold 5 344 x 822
+@media only screen and (width >= 344px) {
+  .footer .footer-logo img {
+    top: 14px;
+  }
 }
 
-@media only screen and (width >= 375px) and (width < 397px) {
+// iphoneSE 375 x 667, iphoneX 375 x 812
+@media only screen and (width >= 375px) {
+  .footer .footer-logo img {
+    top: 18px;
+    max-width: 6rem;
+  }
+  .footer .footer-logo .footer-logo-heading {
+    font-size: 4rem;
+  }
+  .spaceship {
+    bottom: 11vmin;
+  }
 }
 
-@media only screen and (width >= 397px) and (width < 600px) {
+// iphoneXR 414 x 896, Pixel7 412 x 915
+@media only screen and (width >= 412px) {
+  .spaceship {
+    bottom: 9vmin;
+  }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (width >= 600px) and (width < 768px) {
+// iphone14 pro max 430 x 932
+@media only screen and (width >= 430px) {
+  .spaceship {
+    bottom: 8vmin;
+  }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (width >= 768px) and (width < 992px) {
+// surface DUO 540 x 720
+@media only screen and (width >= 540px) {
+  .footer .footer-logo img {
+    max-width: 4rem;
+    top: 13px;
+  }
+  .footer .footer-logo .footer-logo-heading {
+    font-size: 2.8rem;
+  }
+  .spaceship {
+    width: 14rem;
+    bottom: 6vmin;
+  }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (width >= 992px) {
+// ipad Mini 768 x 1024
+@media only screen and (width >= 768px) {
+  .footer .footer-logo img {
+    max-width: 7rem;
+    top: 23px;
+  }
+  .footer .footer-logo .footer-logo-heading {
+    font-size: 4.4rem;
+  }
+  .spaceship {
+    bottom: 0vmin;
+  }
+}
+
+// ipad Air 820 x 1180
+@media only screen and (width >= 820px) {
+  .footer .footer-logo img {
+    max-width: 7rem;
+    top: 24px;
+}
+  .footer .footer-logo .footer-logo-heading {
+    font-size: 5rem;
+  }
+  .footer .social a > i {
+    font-size: 3.5rem;
+}
+  .spaceship {
+    bottom: 0vmin;
+  }
+}
+
+// ipad Pro 1024 x 1366
+@media only screen and (width >= 1024px) {
+  .footer .footer-logo img {
+    max-width: 10rem;
+    top: 29px;
+  }
+  .footer .footer-logo .footer-logo-heading {
+    font-size: 6rem;
+  }
+  .footer .social a > i {
+    font-size: 4.5rem;
+  }
+  .spaceship {
+    bottom: -4vmin;
+    width: 24rem;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

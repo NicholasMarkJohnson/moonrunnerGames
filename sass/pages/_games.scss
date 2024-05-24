@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-color: $color-blk;
+  background-color: $color-bluNav;
   // padding: 2rem 0;
   border-top-left-radius: 0.4rem;
   border-top-right-radius: 0.4rem;
@@ -21,6 +21,9 @@
     font-size: 0;
   }
 }
+
+
+
 
 @media only screen and (width >= 375px) and (width < 397px) {
 }
