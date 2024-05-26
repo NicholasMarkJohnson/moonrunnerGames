@@ -94,8 +94,9 @@ ul.slam li.slam-letter:nth-child(13) {
   position: relative;
   width: 100%;
   overflow: hidden;
-  border-top-left-radius: 0.4rem;
-  border-top-right-radius: 0.4rem;
+  border-radius: .4rem;
+  // border-top-left-radius: 0.4rem;
+  // border-top-right-radius: 0.4rem;
 
   .logo__float {
     position: absolute;

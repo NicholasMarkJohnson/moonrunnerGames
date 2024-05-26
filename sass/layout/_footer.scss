@@ -1,16 +1,13 @@
 .footer {
-  padding: 1rem 2rem 0;
+  align-items: center;
   border-bottom-left-radius: 0.4rem;
   border-bottom-right-radius: 0.4rem;
-  // background-color: $color-footGry;
-  // margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  // min-width: 100%;
-  max-height: 24.3rem;
-  margin: 0 auto 1rem;
   justify-content: flex-end;
-  align-items: center;
+  margin: 0 auto 1rem;
+  max-height: 24.3rem;
+  padding: 1rem 2rem 0;
   position: relative;
 
   & .footer-logo {
@@ -91,12 +88,13 @@
       margin-top: 0;
     }
     & .copy > p {
-      font-size: 1.3rem;
+      line-height: 1;
+      font-size: 1rem;
     }
   }
 }
 
-// Galaxy Z fold 5 344 x 822
+// Galaxy Z fold 5 344 x 822, iphone 4,5 320px
 @media only screen and (width >= 344px) {
   .footer .footer-logo img {
     top: 14px;
@@ -112,24 +110,18 @@
   .footer .footer-logo .footer-logo-heading {
     font-size: 4rem;
   }
-  .spaceship {
-    bottom: 11vmin;
+  .footer .copy > p {
+    margin-top: 1.4rem;
   }
 }
 
 // iphoneXR 414 x 896, Pixel7 412 x 915
-@media only screen and (width >= 412px) {
-  .spaceship {
-    bottom: 9vmin;
-  }
-}
+// @media only screen and (width >= 412px) {
+// }
 
 // iphone14 pro max 430 x 932
-@media only screen and (width >= 430px) {
-  .spaceship {
-    bottom: 8vmin;
-  }
-}
+// @media only screen and (width >= 430px) {
+// }
 
 // surface DUO 540 x 720
 @media only screen and (width >= 540px) {
@@ -139,10 +131,6 @@
   }
   .footer .footer-logo .footer-logo-heading {
     font-size: 2.8rem;
-  }
-  .spaceship {
-    width: 14rem;
-    bottom: 6vmin;
   }
 }
 
@@ -154,9 +142,6 @@
   }
   .footer .footer-logo .footer-logo-heading {
     font-size: 4.4rem;
-  }
-  .spaceship {
-    bottom: 0vmin;
   }
 }
 
@@ -171,9 +156,6 @@
   }
   .footer .social a > i {
     font-size: 3.5rem;
-}
-  .spaceship {
-    bottom: 0vmin;
   }
 }
 
@@ -188,10 +170,6 @@
   }
   .footer .social a > i {
     font-size: 4.5rem;
-  }
-  .spaceship {
-    bottom: -4vmin;
-    width: 24rem;
   }
 }
 

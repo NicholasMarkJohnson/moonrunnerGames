@@ -19,6 +19,7 @@
 
     & .nav-item a.nav-btn {
       transform: translate(25%, 25%);
+      color: #001B40;
     }
 
     & .nav-item a#active {
@@ -158,4 +159,11 @@
 
 .nav__navBar .hamburger__nav-menu.active {
   right: 0;
+}
+
+// ipad Pro 1024 x 1366
+@media only screen and (width >= 1024px) {
+  .nav {
+    margin-bottom: 6rem;
+  }
 }

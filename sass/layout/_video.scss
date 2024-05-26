@@ -70,6 +70,12 @@
   }
 }
 
+@media only screen and (width >= 820px) {
+  .controls {
+    margin-bottom: 2rem;
+  }
+}
+
 @media only screen and (width >= 200px) and (width < 840px) {
   body {
     padding: 1rem;
@@ -98,31 +104,31 @@
   }
 }
 
-@media only screen and (width >= 360px) and (width < 375px) {
-}
+// @media only screen and (width >= 360px) and (width < 375px) {
+// }
 
-@media only screen and (width >= 375px) and (width < 397px) {
-}
+// @media only screen and (width >= 375px) and (width < 397px) {
+// }
 
-@media only screen and (width >= 397px) and (width < 600px) {
-}
+// @media only screen and (width >= 397px) and (width < 600px) {
+// }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (width >= 600px) and (width < 768px) {
-}
+// /* Small devices (portrait tablets and large phones, 600px and up) */
+// @media only screen and (width >= 600px) and (width < 768px) {
+// }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (width >= 768px) and (width < 992px) {
-}
+// /* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (width >= 768px) and (width < 992px) {
+// }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (width >= 992px) {
-}
+// /* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (width >= 992px) {
+// }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (width >= 1160px) {
-}
+// /* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (width >= 1160px) {
+// }
 
-// Hamburger max-width 1000px
-@media (width < 1000px) {
-}
+// // Hamburger max-width 1000px
+// @media (width < 1000px) {
+// }
