@@ -1851,6 +1851,8 @@ video {
 figure {
   background-color: rgba(51, 51, 51, 0.4901960784);
   padding-bottom: 1rem;
+  border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
 }
 
 .stacked {
@@ -2757,7 +2759,7 @@ img.hover-shadow {
     right: 2px;
   }
 }
-@media screen and (width >= 320px) and (width < 1000px) and (height <= 915px) {
+@media screen and (width >= 320px) and (width < 1000px) {
   .container__animation {
     border-radius: 0;
   }
@@ -2805,6 +2807,11 @@ img.hover-shadow {
     align-self: center;
     font-size: 6.5rem;
     font-weight: bold;
+  }
+}
+@media screen and (width >= 320px) and (width < 339px) {
+  .contact h2.contactUs {
+    font-size: 5.5rem;
   }
 }
 @media screen and (width = 360px) and (height <= 800px) {

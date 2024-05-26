@@ -189,7 +189,8 @@
   }
 }
 
-@media screen and (width >= 320px) and (width < 1000px) and (height <= 915px) {
+
+@media screen and (width >= 320px) and (width < 1000px){
   .container__animation {
     border-radius: 0;
   }
@@ -238,6 +239,12 @@
     // color: $color-blueShoe;
     font-size: 6.5rem;
     font-weight: bold;
+  }
+}
+
+@media screen and (width >= 320px) and (width < 339px){
+  .contact h2.contactUs {
+    font-size: 5.5rem;
   }
 }
 
