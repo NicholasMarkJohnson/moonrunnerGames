@@ -1,12 +1,21 @@
 body {
   background-image: url("/img/landingPage/star.svg"), linear-gradient(to bottom, #05007A, #4D007D);
-  height: 100%;
+  // height: 100vh;
+  // overflow: hidden;
   margin: 0 auto;
   background-attachment: fixed;
 }
 
+body#body-hero {
+  height: 100vh;
+  overflow: hidden;
+}
+
 body > section.hero {
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 // Footer
@@ -23,9 +32,10 @@ main {
   background: url("https://assets.codepen.io/1538474/mars.svg") no-repeat bottom center;
   background-size: cover;
 }
-  @media (max-width: 480px) and (min-width: 320px) {
+  @media (min-width: 320px) {
     .mars {
       height: 50vmin;
+      margin-top: 1rem;
     }
 }
 
@@ -48,6 +58,10 @@ main {
 
 // Galaxy Z fold 5 344 x 822, iphone 4,5 320px
 @media only screen and (width >= 320px) {
+  body#body-hero {
+    height: 100VH;
+    overflow: hidden;
+  }
   .spaceship {
     width: 28vmin;
     bottom: 16vmin;
@@ -56,15 +70,27 @@ main {
 
 // iphoneSE 375 x 667, iphoneX 375 x 812
 @media only screen and (width >= 375px) {
+  body#body-hero {
+    height: 100vh;
+    overflow: hidden;
+  }
   .spaceship {
     bottom: 11vmin;
   }
+}
+
+// iphone12 390 x 844
+@media only screen and (width >= 390px) {
+
 }
 
 // iphoneXR 414 x 896, Pixel7 412 x 915
 @media only screen and (width >= 412px) {
   .spaceship {
     bottom: 9vmin;
+  }
+  .mars {
+    margin-top: 5rem;
   }
 }
   
@@ -86,14 +112,14 @@ main {
 // ipad Mini 768 x 1024
 @media only screen and (width >= 768px) {
   .spaceship {
-    bottom: 0vmin;
+    width: 19rem;
   }
 }
 
 // ipad Air 820 x 1180
 @media only screen and (width >= 820px) {
   .spaceship {
-    bottom: 0vmin;
+    width: 20rem;
   }
 }
 

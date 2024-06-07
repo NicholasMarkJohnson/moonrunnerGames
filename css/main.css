@@ -509,52 +509,14 @@ body {
   scroll-margin-top: 10rem;
 }
 
-@media only screen and (width >= 200px) and (width < 745px) {
-  #popupMe .popup-contentMe {
-    flex-direction: column;
-  }
-  #popupMe .popup-contentMe .popup-left-me {
-    padding-top: 2rem;
-    margin-bottom: -2rem;
-  }
-  #popupMe .popup-contentMe .popup-left-me .back-frame {
-    display: none;
-  }
-  #popupMe .popup-contentMe .popup-left-me .back-frame .imgMe {
-    top: -10px;
-    left: 32px;
-    width: 64%;
-  }
-  #popupMe .popup-contentMe .popup-right a.about-btn__us {
-    margin-top: 2rem;
-  }
-  #popupMe .popup-contentMe .popup-right .journey {
-    font-size: 1.8rem;
-    margin: 0.3rem 0 1rem;
-    color: white;
-  }
-  #popupMe .popup-contentMe .popup-right .journey .journeyBold {
-    line-height: 1;
-    font-size: 2.2rem;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-heading {
-    margin-left: 0;
-    margin-top: 0.3rem;
-    font-size: 3.2rem;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-para {
-    font-size: 1.8rem;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-para .popup-run {
-    font-size: 2.3rem;
-  }
+@media only screen and (width >= 320px) and (width < 1000px) {
   .popup {
     align-items: flex-start;
     background-color: rgba(251, 251, 251, 0.84);
   }
   .popup .popup-content {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     min-width: 100%;
     margin-top: 0;
     border-radius: 0;
@@ -562,7 +524,7 @@ body {
   }
   .popup .popup-content .popup-left {
     display: flex;
-    height: 0;
+    height: 25%;
   }
   .popup .popup-content .popup-left .imgTop, .popup .popup-content .popup-left .imgBott {
     display: none;
@@ -579,18 +541,16 @@ body {
   .popup .popup-content .popup-right {
     padding: 0 2rem;
     width: 100vw;
-    height: 100%;
+    height: 75%;
   }
-  .popup .popup-content .popup-right .popup-close {
+  .popup .popup-content .popup-right #popup-close--aboutMe {
     font-size: 4rem;
+    top: -151px;
   }
   .popup .popup-content .popup-right .popup-heading {
     margin-left: 0;
     margin-top: 2rem;
     font-size: 3.2rem;
-  }
-  .popup .popup-content .popup-right .popup-heading > img {
-    display: none;
   }
   .popup .popup-content .popup-right .popup-para {
     -moz-column-count: unset;
@@ -610,768 +570,265 @@ body {
     margin: 0.3rem 0 2rem;
     color: #7fff65;
   }
-}
-@media only screen and (width >= 374px) and (width < 1000px) and (height >= 666px) and (height < 812px) {
-  .popup .popup-content .popup-left {
+  #popupMe .popup-contentMe {
+    flex-direction: column;
+  }
+  #popupMe .popup-contentMe .popup-left-me {
+    margin-bottom: -1.5rem;
     height: 25%;
   }
-  .popup .popup-content .popup-left .imgTop {
+  #popupMe .popup-contentMe .popup-left-me .back-frame {
     display: block;
-    height: 100%;
-    width: 100%;
+    height: 14rem;
+    width: 14rem;
   }
-  .popup .popup-content .popup-right {
-    height: 75%;
+  #popupMe .popup-contentMe .popup-left-me .back-frame .imgMe {
+    top: -5px;
+    left: 2px;
+    width: 110%;
   }
-  .popup .popup-content .popup-right .popup-close {
-    padding-top: 1rem;
-  }
-  .popup .popup-content .popup-right .popup-heading {
-    margin: 0;
-  }
-}
-@media only screen and (width >= 374px) and (width < 1000px) and (height >= 812px) and (height < 820px) {
-  .popup .popup-content .popup-left {
-    height: 25%;
-  }
-  .popup .popup-content .popup-left .imgTop {
-    display: block;
-    height: 100%;
-    width: 100%;
-  }
-  .popup .popup-content .popup-right {
-    height: 75%;
-  }
-  .popup .popup-content .popup-right .popup-close {
-    padding-top: 1rem;
-  }
-  .popup .popup-content .popup-right .popup-heading {
-    margin: 0;
+  #popupMe .popup-contentMe .popup-right .popup-close--aboutMe {
     font-size: 4rem;
-  }
-}
-@media only screen and (width >= 360px) and (width <= 375px) and (height >= 760px) and (height <= 800px) {
-  .popup {
-    align-items: space-between;
-  }
-  .popup .popup-content .popup-left .imgTop {
-    display: block;
-    height: 25%;
-  }
-  .popup .popup-content .popup-right {
-    height: 75%;
-  }
-  .popup .popup-content .popup-right a.about-btn__me {
-    margin-bottom: 0;
-  }
-  .popup .popup-content .popup-right .popup-close {
-    padding-top: 8px;
-  }
-  .popup .popup-content .popup-right .popup-heading {
-    margin-bottom: -39px;
-    font-size: 3.5rem;
-  }
-  .popup .popup-content .popup-right .popup-heading > img {
-    display: block;
-    max-width: 5.5rem;
-    position: absolute;
-    top: -25px;
-    right: 115px;
-  }
-  .popup .popup-content .popup-right .popup-para {
-    font-size: 1.9rem;
-    margin-bottom: -2.5rem;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-para {
-    margin: 4rem 0 0;
+    top: -151px;
   }
   #popupMe .popup-contentMe .popup-right a.about-btn__us {
-    margin: 1rem;
-  }
-  #popupMe .popup-content .popup-right .popup-heading > img {
-    display: block;
-    max-width: 5.5rem;
-    position: absolute;
-    top: -28px;
-    right: -5px;
+    margin-top: 1rem;
   }
   #popupMe .popup-contentMe .popup-right .journey {
+    font-size: 1.6rem;
     margin: 0;
+    color: #fff;
   }
-}
-@media only screen and (width >= 360px) and (width <= 375px) and (height >= 760px) and (height <= 800px) {
-  .popup .popup-content .popup-left {
-    height: 25%;
-  }
-  .popup .popup-content .popup-left .imgTop {
-    display: block;
-    height: 100%;
-  }
-  .popup .popup-content .popup-right .journey {
-    font-size: 1.9rem;
-    margin-bottom: -1rem;
-  }
-}
-@media only screen and (width >= 376px) and (width < 412px) and (height > 667px) and (height < 884px) {
-  .popup .popup-content .popup-left {
-    height: 25%;
-  }
-  .popup .popup-content .popup-left .imgTop {
-    display: block;
-    height: 100%;
-  }
-  .popup .popup-content .popup-right {
-    height: 75%;
-  }
-  .popup .popup-content .popup-right .journey {
-    font-size: 2rem;
-  }
-  .popup .popup-content .popup-right .popup-heading {
-    margin-top: 0;
-    font-size: 4rem;
-  }
-  .popup .popup-content .popup-right .popup-para {
-    font-size: 2rem;
-  }
-  .popup .popup-content .popup-right .popup-para .popup-slam {
-    font-size: 2.1rem;
-  }
-  .popup .popup-content .popup-right .popup-para .popup-flash {
+  #popupMe .popup-contentMe .popup-right .journey .journeyBold {
+    line-height: 1;
     font-size: 2.2rem;
   }
-}
-@media only screen and (width >= 320px) and (width < 325px) {
-  .popup .popup-content .popup-right .popup-close {
-    padding-top: 0.8rem;
-  }
-}
-@media only screen and (width = 322px) and (height = 568px) {
   #popupMe .popup-contentMe .popup-right .popup-heading {
-    position: relative;
-    top: 17px;
-  }
-  #popupMe .popup-contentMe .popup-right a.about-btn__us {
     margin-top: 0;
-  }
-  #popupMoon .popup-content .popup-right .popup-heading {
-    position: relative;
-    top: 17px;
-  }
-  #popupMoon .popup-content .popup-right .popup-heading > img {
-    display: block;
-    right: 100px;
-    top: -28px;
-    width: 6rem;
-  }
-  #popupMoon .popup-content .popup-right .journey {
-    margin-bottom: 1rem;
-  }
-}
-@media only screen and (width >= 360px) and (height <= 760px) {
-  #popupMe .popup-contentMe .popup-right .popup-heading {
-    font-size: 3.5rem;
-  }
-}
-@media only screen and (width >= 360px) and (width < 384px) {
-  #popupMe .popup-contentMe .popup-left-me {
-    margin-bottom: 0;
-  }
-  #popupMe .popup-contentMe .popup-left-me .back-frame {
-    display: block;
-    height: 19rem;
-  }
-  #popupMe .popup-contentMe .popup-left-me .back-frame .imgMe {
-    left: 46px;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-close {
-    margin-top: -202px;
-  }
-}
-@media only screen and (width = 360px) and (height = 740px) {
-  #popupMe .popup-contentMe .popup-left-me .back-frame {
-    height: 15rem;
-    width: 15rem;
-  }
-  #popupMe .popup-contentMe .popup-left-me .back-frame .imgMe {
-    left: 0px;
-    width: 100%;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-close {
-    margin-top: -163px;
-  }
-  #popupMe .popup-contentMe .popup-right a.about-btn__us {
-    margin-top: 0rem;
-  }
-  .popup .popup-content .popup-right .popup-heading > img.meGiz {
-    display: block;
-    top: -24px;
-    right: -3px;
-  }
-  #popupMoon .popup-content .popup-left {
-    flex-direction: column-reverse;
-    height: 25%;
-  }
-  #popupMoon .popup-content .popup-left img.imgTop {
-    display: block;
-    height: 100%;
-  }
-  #popupMoon .popup-content .popup-right .popup-heading {
-    font-size: 3.8rem;
-    margin-bottom: 2rem;
-    position: relative;
-    top: 33px;
-  }
-  #popupMoon .popup-content .popup-right .popup-heading img {
-    display: block;
-    top: -34px;
-    right: 121px;
-  }
-  #popupMoon .popup-content .popup-right .popup-close {
-    top: -7px;
-  }
-  #popupMoon .popup-content .popup-right .journey {
-    margin-bottom: 1rem;
-  }
-}
-@media only screen and (width = 360px) and (height = 760px) {
-  #popupMe .popup-contentMe .popup-left-me .back-frame {
-    height: 19rem;
-    width: 19rem;
-  }
-  #popupMe .popup-contentMe .popup-left-me .back-frame .imgMe {
-    left: 17px;
-    width: 85%;
-  }
-}
-@media only screen and (width = 360px) and (height = 800px) {
-  #popupMoon .popup-content .popup-right .popup-heading > img {
-    top: -29px;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-heading {
-    font-size: 3.5rem;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-para {
-    font-size: 2rem;
-  }
-  .popup .popup-content .popup-right .popup-para {
-    font-size: 2rem;
-  }
-}
-@media only screen and (width = 375px) and (height = 667px) {
-  #popupMe .popup-contentMe .popup-left-me .back-frame {
-    height: 15rem;
-    width: 15rem;
-  }
-  #popupMe .popup-contentMe .popup-left-me .back-frame .imgMe {
-    left: 3px;
-    width: 100%;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-heading {
-    font-size: 3.7rem;
-    position: relative;
-    top: 13px;
-    margin-top: -2rem;
-    margin-bottom: 0.5rem;
   }
   #popupMe .popup-contentMe .popup-right .popup-heading > img {
-    display: block;
-    top: -23px;
-    right: -4px;
+    top: -25px;
+    right: -6px;
   }
   #popupMe .popup-contentMe .popup-right .popup-para {
-    margin-bottom: -0.5rem;
+    font-size: 1.6rem;
+    margin-top: -13px;
   }
   #popupMe .popup-contentMe .popup-right .popup-para .popup-run {
-    line-height: 1;
-  }
-  #popupMe .popup-contentMe .popup-right a.about-btn__us {
-    margin-top: 0;
-  }
-  #popupMoon .popup-content .popup-right .popup-heading {
-    font-size: 3.8rem;
-    top: 43px;
-  }
-  #popupMoon .popup-content .popup-right .popup-heading > img {
-    max-width: 6rem;
-    top: -22px;
-    right: 125px;
-    display: block;
-  }
-  #popupMoon .popup-content .popup-right .popup-para {
-    line-height: 1.6;
-    margin-top: 2rem;
-    top: 14px;
-    position: relative;
-  }
-  #popupMoon .popup-content .popup-right .journey {
-    margin-bottom: 1rem;
-  }
-  #popupMoon .popup-content .popup-right .about-btn__me {
-    margin-bottom: 2rem;
-  }
-}
-@media only screen and (width = 375px) and (height = 812px) {
-  #popupMoon .popup-content .popup-right .popup-heading {
-    position: relative;
-    top: 32px;
-  }
-  #popupMoon .popup-content .popup-right .popup-heading > img {
-    display: block;
-    top: -31px;
-    right: 127px;
-  }
-  #popupMoon .popup-content .popup-right .popup-para {
-    margin-bottom: -1.5rem;
-  }
-  #popupMoon .popup-content .popup-right .journey {
-    margin-bottom: 0;
-  }
-  #popupMoon .aboutBtn {
-    margin-bottom: 0;
-  }
-  #popupMe .popup-contentMe .popup-left-me .back-frame {
-    height: 25rem;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-heading {
-    font-size: 3.8rem;
-  }
-  #popupMe .popup-content .popup-right .popup-heading > img {
-    display: block;
-    top: -23px;
-    right: -3px;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-close {
-    margin-top: -273px;
-  }
-  #popupMe .popup-contentMe .popup-right .journey {
-    margin-bottom: -1rem;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-para {
-    margin-bottom: -0.5rem;
-    margin-top: -1rem;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-para,
-  #popupMoon .popup-content .popup-right .popup-para {
-    font-size: 1.9rem;
-  }
-  .popup .popup-content .popup-right .journey {
-    font-size: 1.9rem;
-  }
-}
-@media only screen and (width >= 384px) and (width < 385px) {
-  .popup .popup-content .popup-right .popup-close {
-    padding-top: 0.8rem;
-  }
-}
-@media only screen and (width >= 390px) and (width < 845px) and (height < 845px) {
-  .popup .popup-content .popup-right .popup-close {
-    padding-top: 0.8rem;
-  }
-  #popupMe .popup-contentMe .popup-left-me .back-frame {
-    display: block;
-  }
-}
-@media only screen and (width = 384px) and (height = 854px) {
-  #popupMe .popup-contentMe .popup-left-me .back-frame {
-    display: block;
-    height: 19rem;
-  }
-  #popupMe .popup-contentMe .popup-left-me .back-frame .imgMe {
-    left: 49px;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-close {
-    top: -226px;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-heading {
-    margin-top: 0.5rem;
-    font-size: 4rem;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-heading .meGiz {
-    display: block;
-    top: -22px;
-    left: 297px;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-para {
-    font-size: 2.1rem;
-  }
-  #popupMe .popup-contentMe .popup-right a.about-btn__us {
-    margin-top: 0;
-  }
-  #popupMe .popup-contentMe .popup-left-me {
-    margin-bottom: 0;
-  }
-  .popup .popup-content .popup-right .popup-heading > img {
-    display: block;
-  }
-  #popupMoon .popup-content .popup-right .popup-heading > img {
-    top: -35px;
-    right: 127px;
-  }
-  #popupMoon .popup-content .popup-right .popup-para {
-    margin-bottom: -0.5rem;
-  }
-  .popup .popup-content .popup-right .popup-heading {
-    margin-top: 58px;
-  }
-  .popup .popup-content .popup-right .journey {
-    margin: 0.3rem 0 1rem;
-  }
-}
-@media only screen and (width = 390px) and (height = 844px) {
-  #popupMoon .popup-content .popup-right {
-    padding: 0 3rem;
-  }
-  #popupMoon .popup-content .popup-right .popup-heading {
-    position: relative;
-    top: 35px;
-  }
-  #popupMoon .popup-content .popup-right .popup-heading > img {
-    display: block;
-    top: -31px;
-    right: 129px;
-  }
-  #popupMoon .popup-content .popup-right .popup-para {
-    margin-bottom: -0.5rem;
-  }
-  #popupMoon .popup-content .popup-right .journey {
-    margin: 0;
-  }
-  #popupMe .popup-contentMe .popup-left-me .back-frame {
-    height: 19rem;
-    width: 19rem;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-close {
-    top: -207px !important;
-  }
-  #popupMe .popup-contentMe .popup-left-me .back-frame .imgMe {
-    top: -10px;
-    left: 9px !important;
-    width: 90%;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-para {
-    font-size: 2rem !important;
-  }
-  #popupMe .popup-contentMe .popup-right a.about-btn__us {
-    margin-top: 0.5rem;
-  }
-}
-@media only screen and (width >= 390px) and (width < 845px) and (height < 950px) {
-  #popupMe .popup-contentMe .popup-left-me .back-frame {
-    display: block;
-    height: 19rem;
-  }
-  #popupMe .popup-contentMe .popup-left-me .back-frame .imgMe {
-    left: 49px;
-  }
-  #popupMe .popup-contentMe .popup-right {
-    padding: 0 2rem;
-    justify-content: space-between;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-close {
-    top: -222px;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-heading {
-    font-size: 4rem;
-    margin-top: 2rem;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-heading .meGiz {
-    display: block;
-    top: -22px;
-    left: 297px;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-para {
     font-size: 2.3rem;
   }
-  #popupMe .popup-contentMe .popup-right .popup-para .popup-run {
-    font-size: 2.7rem;
+  #popupMoon .popup-content {
+    flex-direction: column;
   }
-  #popupMe .popup-contentMe .popup-right .popup-para .popup-slam {
+  #popupMoon .popup-content .popup-left {
+    margin-bottom: -2rem;
+    height: 25%;
+  }
+  #popupMoon .popup-content .popup-left .imgTop {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  #popupMoon #popup-close--aboutMoon {
+    font-size: 4rem;
+    top: -6px;
+  }
+  #popupMoon .popup-right {
+    height: 75%;
+  }
+  #popupMoon .popup-right a.about-btn__us {
+    margin-top: 1rem;
+  }
+  #popupMoon .popup-right .journey {
+    font-size: 1.6rem;
+    margin: 0 0 2rem;
+  }
+  #popupMoon .popup-right .journey .journeyBold {
+    line-height: 1;
+    font-size: 2.2rem;
+  }
+  #popupMoon .popup-right .popup-heading {
+    margin-top: 29px;
+    position: relative;
+    left: -23px;
+  }
+  #popupMoon .popup-right .popup-heading > img {
+    top: 0px;
+    right: -46px;
+    max-width: 4.5rem;
+  }
+  #popupMoon .popup-right .popup-para {
+    font-size: 1.6rem;
+    margin-top: -13px;
+  }
+  #popupMoon .popup-right .popup-para .popup-run {
+    font-size: 2.3rem;
+  }
+}
+@media only screen and (width = 360px) {
+  #popupMe .popup-contentMe .popup-right #popup-close--aboutMe {
+    top: -178px;
+  }
+  #popupMe .popup-contentMe .popup-right .popup-heading {
+    margin: 1rem 0;
+    font-size: 3.7rem;
+  }
+  #popupMe .popup-contentMe .popup-right .popup-heading > img {
+    top: -22px;
+    right: -1px;
+  }
+  #popupMe .popup-contentMe .popup-right .popup-para {
+    font-size: 1.96rem;
+  }
+  #popupMe .popup-contentMe .popup-right .journey {
+    position: relative;
+    top: -10px;
+  }
+  #popupMe .popup-contentMe .popup-right a.about-btn__us {
+    margin: 0;
+    position: relative;
+    bottom: 4px;
+  }
+  #popupMe .popup-contentMe .popup-left-me .back-frame {
+    width: 17rem;
+    height: 17rem;
+    margin-top: 1rem;
+  }
+  #popupMoon .popup-right .popup-heading {
+    left: -24px;
+    font-size: 3.6rem;
+  }
+  #popupMoon .popup-right .popup-para {
+    font-size: 2rem;
+  }
+  #popupMoon .popup-right .journey {
+    font-size: 2rem;
+    position: relative;
+    bottom: 10px;
+    margin: 0;
+  }
+}
+@media only screen and (width >= 375px) {
+  #popupMoon .popup-right .popup-heading {
+    font-size: 3.6rem;
+  }
+  #popupMoon .popup-right .popup-heading > img {
+    top: -2px;
+    right: -57px;
+    max-width: 5.5rem;
+  }
+  #popupMoon .popup-right .popup-para {
+    font-size: 1.779rem;
+  }
+  #popupMoon .popup-right .journey {
+    font-size: 2.5rem;
+    margin: 0;
+    position: relative;
+    top: -11px;
+  }
+  #popupMe .popup-contentMe .popup-right #popup-close--aboutMe {
+    top: -160px;
+  }
+  #popupMe .popup-contentMe .popup-right .popup-para {
+    font-size: 1.86rem;
+  }
+}
+@media only screen and (width >= 390px) {
+  #popupMe .popup-contentMe .popup-left-me .back-frame {
+    height: 20rem;
+    width: 20rem;
+  }
+  #popupMe .popup-contentMe .popup-right #popup-close--aboutMe {
+    top: -205px;
+  }
+  #popupMe .popup-contentMe .popup-right .popup-heading-me {
+    font-size: 4rem;
+  }
+  #popupMe .popup-contentMe .popup-right .popup-heading-me > img {
+    top: -19px;
+  }
+  #popupMe .popup-contentMe .popup-right .popup-para {
     font-size: 2.3rem;
   }
   #popupMe .popup-contentMe .popup-right .journey .journeyBold {
     font-size: 2.5rem;
   }
-}
-@media only screen and (width >= 412px) and (width < 745px) and (height >= 760px) {
-  .popup .popup-contentMe .popup-right a.popup-close {
-    top: -222px;
+  #popupMoon .popup-right .popup-heading {
+    font-size: 3.8rem;
+    left: -29px;
   }
-  .popup .popup-content {
-    justify-content: space-between;
-  }
-  .popup .popup-content .popup-left {
-    display: flex;
-    height: 25%;
-    flex-direction: column;
-  }
-  .popup .popup-content .popup-left .imgTop {
-    display: none;
-  }
-  .popup .popup-content .popup-left .imgBott {
-    display: block;
-    height: 100%;
-  }
-  .popup .popup-content .popup-right {
-    height: 50%;
-    margin: 2.2rem 0;
-    padding: 2rem 3rem;
-  }
-  .popup .popup-content .popup-right .popup-close {
-    top: -31px;
-  }
-  .popup .popup-content .popup-right .popup-heading {
-    margin: 22rem 0 0 0rem;
-    font-size: 4rem;
-  }
-  .popup .popup-content .popup-right .popup-heading > img {
-    display: block;
-    width: 6.5rem;
-    right: 132px;
-    top: -31px;
-  }
-  .popup .popup-content .popup-right .popup-para {
-    font-size: 2.3rem;
-    margin-top: -1rem;
-  }
-  .popup .popup-content .popup-right .popup-para .popup-slam, .popup .popup-content .popup-right .popup-para .popup-flash {
+  #popupMoon .popup-right .popup-para {
     font-size: 2.3rem;
   }
-  .popup .popup-content .popup-right .journey {
-    margin-bottom: 2rem;
-    font-size: 2.1rem;
+  #popupMoon .popup-right .popup-para .popup-slam {
+    font-size: 2.5rem;
   }
-  .popup .popup-contentMe {
-    justify-content: start;
+  #popupMoon .popup-right .popup-para .popup-flash {
+    font-size: 2.4rem;
+  }
+}
+@media only screen and (width >= 412px) {
+  #popupMe .popup-contentMe .popup-left-me .back-frame {
+    height: 20rem;
+    width: 20rem;
+  }
+  #popupMe .popup-contentMe .popup-right #popup-close--aboutMe {
+    top: -211px;
   }
   #popupMe .popup-contentMe .popup-right .popup-heading {
-    margin-top: 0.5rem;
+    font-size: 4.3rem;
   }
-}
-@media only screen and (width = 412px) and (height = 915px) {
-  .popup .popup-content .popup-right .popup-heading {
-    margin-bottom: 1rem;
-  }
-}
-@media screen and (width >= 412px) and (width < 500px) and (height <= 883px) {
-  .popup .popup-contentMe .popup-right a.popup-close {
-    top: -222px;
-  }
-  .popup .popup-content .popup-right .popup-para {
-    margin-bottom: 0;
-  }
-  .popup .popup-content .popup-right .journey {
-    margin: 0 0 1rem 0;
-  }
-}
-@media screen and (width = 412px) and (height = 883px) {
-  #popupMe .popup-contentMe .popup-right a.about-btn__us {
-    margin-top: 1rem;
-  }
-}
-@media screen and (width >= 414px) and (width < 500px) and (height <= 736px) {
-  .popup .popup-content .popup-right .popup-heading {
-    font-size: 3.7rem;
-  }
-}
-@media screen and (width = 414px) and (height = 736px) {
-  #popupMe .popup-contentMe .popup-left-me .back-frame {
-    width: 15rem;
-    height: 15rem;
-  }
-  #popupMe .popup-contentMe .popup-left-me .back-frame .imgMe {
-    left: 3px;
-    top: -1px;
-    width: 100%;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-heading .meGiz {
-    display: block;
-    top: -21px;
-    left: 294px;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-close {
-    top: -166px;
+  #popupMe .popup-contentMe .popup-right .popup-heading > img {
+    max-width: 5rem;
+    top: -17px;
+    right: 3px;
   }
   #popupMe .popup-contentMe .popup-right .popup-para {
-    font-size: 2rem;
-    line-height: 1.7;
-  }
-  #popupMe .popup-contentMe .popup-right a.about-btn__us {
-    margin-top: 5px;
-  }
-  #popupMoon .popup-content .popup-right .popup-para {
-    font-size: 2rem;
-    position: relative;
-    top: 13px;
-  }
-  #popupMoon .popup-content .popup-right .popup-heading {
-    top: 36px;
-    font-size: 4.2rem;
-  }
-  #popupMoon .popup-content .popup-right .popup-heading > img {
-    right: 140px;
-    top: -20px;
-    display: block;
-    width: 61px;
-  }
-}
-@media screen and (width = 414px) and (height = 896px) {
-  #popupMe .popup-contentMe .popup-left-me .back-frame {
-    height: 25rem;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-close {
-    top: -280px;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-heading {
-    margin-bottom: 2rem;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-heading .meGiz {
-    top: -21px;
-    left: 295px;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-para {
-    font-size: 2rem;
-  }
-  #popupMoon .popup-content .popup-right {
-    padding-left: 4rem;
-    padding-right: 4rem;
-    margin-top: 1.2rem;
-  }
-  #popupMoon .popup-content .popup-right .popup-close {
-    top: -21px;
-  }
-  #popupMoon .popup-content .popup-right .popup-heading {
-    margin: 24rem 0 1rem 0;
-  }
-  #popupMoon .popup-content .popup-right .popup-para {
-    font-size: 2.1rem;
-  }
-  #popupMoon .popup-contentMe .popup-right .journey {
-    margin: 0;
-  }
-  #popupMoon .popup-content .popup-right .popup-heading > img {
-    right: 127px;
-    top: -27px;
-  }
-}
-@media only screen and (width = 428px) and (height = 926px) {
-  #popupMe .popup-contentMe .popup-left-me .back-frame {
-    height: 25rem;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-close {
-    top: -281px;
+    font-size: 2.39rem;
   }
   #popupMe .popup-contentMe .popup-right .journey {
+    margin: 0 0 8px 0;
+  }
+  #popupMe .popup-contentMe .popup-right .journey .journeyBold {
+    font-size: 2.5rem;
+    line-height: 1.6;
+  }
+  #popupMoon .popup-right .popup-heading {
+    font-size: 4rem;
+  }
+  #popupMoon .popup-right .popup-heading > img {
+    right: -58px;
+    top: 1px;
+    max-width: 5.5rem;
+  }
+  #popupMoon .popup-right .popup-para {
+    font-size: 2.5rem;
+  }
+  #popupMoon .popup-right .journey {
+    font-size: 2.5rem;
+    position: relative;
+    top: -11px;
     margin: 0;
   }
-  #popupMe .popup-contentMe .popup-right a.about-btn__us {
-    margin-top: 0.8rem;
+}
+@media only screen and (width >= 430px) {
+  #popupMe .popup-contentMe .popup-right #popup-close--aboutMe {
+    top: -226px;
   }
 }
-@media only screen and (width >= 552px) and (width < 745px) {
-  .popup .popup-content .popup-left .imgTop {
-    border-bottom: 1px solid #001b40;
-  }
-  .popup .popup-content .popup-right {
-    padding: 0 1rem;
-    width: 100vw;
-    height: 50vh;
-  }
-  .popup .popup-content .popup-right .popup-heading {
-    margin-top: 0;
-    margin-left: -7rem;
-    font-size: 5rem;
-  }
-  .popup .popup-content .popup-right .popup-para, .popup .popup-content .popup-right .journey {
-    font-size: 2.2rem;
-  }
-}
-@media only screen and (width >= 600px) and (width < 745px) {
-  .popup .popup-content .popup-right .popup-heading img {
-    display: block;
-  }
-}
-@media only screen and (width >= 745px) and (width < 1000px) {
-  #popupMe .popup-contentMe {
-    flex-direction: column;
-  }
-  #popupMe .popup-contentMe .popup-left-me {
-    padding-top: 2rem;
-    margin-bottom: -2rem;
-  }
+@media only screen and (width >= 540px) {
   #popupMe .popup-contentMe .popup-left-me .back-frame {
-    height: 18rem;
-    width: 18rem;
+    height: 16rem;
+    width: 16rem;
   }
-  #popupMe .popup-contentMe .popup-left-me .back-frame .imgMe {
-    top: -10px;
-    left: 32px;
-    width: 64%;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-close {
-    top: -20rem;
-    padding-top: 0.5rem;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-heading {
-    margin-left: -1rem;
+  #popupMe .popup-contentMe .popup-right #popup-close--aboutMe {
+    top: -172px;
   }
   #popupMe .popup-contentMe .popup-right .popup-para {
-    padding-left: 1.5rem;
-    font-size: 2rem;
-    text-align: unset;
-  }
-  #popupMe .popup-contentMe .popup-right .popup-para .popup-run {
     font-size: 2.3rem;
   }
-  .popup {
-    align-items: center;
-  }
-  .popup .popup-content {
-    display: flex;
-    flex-direction: column-reverse;
-    min-width: 95%;
-    margin-top: 2rem;
-  }
-  .popup .popup-content .popup-left {
-    display: flex;
-    height: 20rem;
-    border: 1px solid #001b40;
-    border-bottom-left-radius: 3rem;
-    border-bottom-right-radius: 3rem;
-  }
-  .popup .popup-content .popup-left .imgTop, .popup .popup-content .popup-left .imgBott {
-    min-width: 50%;
-    min-height: 100%;
-  }
-  .popup .popup-content .popup-left .imgTop {
-    border-top-left-radius: 0rem;
-    border-bottom-left-radius: 0.4rem;
-  }
-  .popup .popup-content .popup-left .imgBott {
-    border-bottom-left-radius: 0rem;
-    border-bottom-right-radius: 0.4rem;
-  }
-  .popup .popup-content .popup-right .popup-heading {
-    margin-left: -5rem;
-    margin-top: 2rem;
-  }
-  .popup .popup-content .popup-right .popup-para {
-    -moz-column-gap: 3.6rem;
-         column-gap: 3.6rem;
-    font-size: 2rem;
-  }
-  .popup .popup-content .popup-right .popup-para .popup-slam {
-    font-size: 2rem;
-  }
-  .popup .popup-content .popup-right .popup-para .popup-flash {
+  #popupMoon .popup-right .popup-para {
     font-size: 2.2rem;
-  }
-  .popup .popup-content .popup-right .journey {
-    font-size: 1.9rem;
-  }
-}
-@media only screen and (width > 1000px) and (height <= 760px) {
-  #popupMe .popup-contentMe .popup-right .popup-heading {
-    font-size: 4.5rem;
   }
 }
 .footer {
@@ -1455,21 +912,34 @@ body {
     font-size: 1rem;
   }
 }
-@media only screen and (width >= 344px) {
+@media only screen and (width >= 320px) {
   .footer .footer-logo img {
     top: 14px;
   }
 }
 @media only screen and (width >= 375px) {
+  #footer {
+    top: 9px;
+  }
   .footer .footer-logo img {
-    top: 18px;
-    max-width: 6rem;
+    top: 14px;
+    max-width: 5rem;
   }
   .footer .footer-logo .footer-logo-heading {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .footer .copy > p {
     margin-top: 1.4rem;
+  }
+}
+@media only screen and (width >= 390px) {
+  #footer {
+    top: -39px;
+  }
+}
+@media only screen and (width >= 430px) {
+  .mars {
+    margin-top: 8rem;
   }
 }
 @media only screen and (width >= 540px) {
@@ -1483,23 +953,14 @@ body {
 }
 @media only screen and (width >= 768px) {
   .footer .footer-logo img {
-    max-width: 7rem;
-    top: 23px;
+    max-width: 10rem;
+    top: 35px;
   }
   .footer .footer-logo .footer-logo-heading {
-    font-size: 4.4rem;
-  }
-}
-@media only screen and (width >= 820px) {
-  .footer .footer-logo img {
-    max-width: 7rem;
-    top: 24px;
-  }
-  .footer .footer-logo .footer-logo-heading {
-    font-size: 5rem;
+    font-size: 7.4rem;
   }
   .footer .social a > i {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
 }
 @media only screen and (width >= 1024px) {
@@ -1563,13 +1024,20 @@ ul.slam span.slam-gap {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 body {
   background-image: url("/img/landingPage/star.svg"), linear-gradient(to bottom, #05007A, #4D007D);
-  height: 100%;
   margin: 0 auto;
   background-attachment: fixed;
 }
 
+body#body-hero {
+  height: 100vh;
+  overflow: hidden;
+}
+
 body > section.hero {
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main {
@@ -1585,9 +1053,10 @@ main {
   background-size: cover;
 }
 
-@media (max-width: 480px) and (min-width: 320px) {
+@media (min-width: 320px) {
   .mars {
     height: 50vmin;
+    margin-top: 1rem;
   }
 }
 .spaceship__container {
@@ -1605,12 +1074,20 @@ main {
 }
 
 @media only screen and (width >= 320px) {
+  body#body-hero {
+    height: 100VH;
+    overflow: hidden;
+  }
   .spaceship {
     width: 28vmin;
     bottom: 16vmin;
   }
 }
 @media only screen and (width >= 375px) {
+  body#body-hero {
+    height: 100vh;
+    overflow: hidden;
+  }
   .spaceship {
     bottom: 11vmin;
   }
@@ -1618,6 +1095,9 @@ main {
 @media only screen and (width >= 412px) {
   .spaceship {
     bottom: 9vmin;
+  }
+  .mars {
+    margin-top: 5rem;
   }
 }
 @media only screen and (width >= 430px) {
@@ -1633,12 +1113,12 @@ main {
 }
 @media only screen and (width >= 768px) {
   .spaceship {
-    bottom: 0vmin;
+    width: 19rem;
   }
 }
 @media only screen and (width >= 820px) {
   .spaceship {
-    bottom: 0vmin;
+    width: 20rem;
   }
 }
 @media only screen and (width >= 1024px) {
@@ -2085,6 +1565,10 @@ img.hover-shadow {
     margin-bottom: 6rem;
   }
 }
+#displayNone {
+  display: none;
+}
+
 .video-wrapper {
   position: relative;
   display: flex;
@@ -2157,21 +1641,44 @@ img.hover-shadow {
   }
   .video-wrapper {
     width: 120%;
+    margin-top: 1rem;
   }
   .video-wrapper video#video {
-    height: 35rem;
+    height: 44rem;
   }
   .video-wrapper #cover-img {
     min-width: 78%;
   }
   .controls {
     width: 96%;
+    margin-top: -1px;
   }
   .controls .btn-video {
     font-size: 1rem;
   }
   .controls #progress {
     min-width: 13rem;
+  }
+}
+@media only screen and (width >= 320px) {
+  .video-wrapper video#video {
+    height: 28rem;
+  }
+}
+@media only screen and (width >= 390px) {
+  .video-wrapper {
+    margin-top: 4rem;
+  }
+  .video-wrapper video#video {
+    height: 40rem;
+  }
+}
+@media only screen and (width >= 412px) {
+  .video-wrapper {
+    margin-top: 4rem;
+  }
+  .video-wrapper video#video {
+    height: 40rem;
   }
 }
 .container-about {

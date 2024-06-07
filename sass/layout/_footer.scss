@@ -94,8 +94,8 @@
   }
 }
 
-// Galaxy Z fold 5 344 x 822, iphone 4,5 320px
-@media only screen and (width >= 344px) {
+// Galaxy S9 320 x 658, Galaxy Z fold 5 344 x 822, iphone 4,5 320px
+@media only screen and (width >= 320px) {
   .footer .footer-logo img {
     top: 14px;
   }
@@ -103,25 +103,39 @@
 
 // iphoneSE 375 x 667, iphoneX 375 x 812
 @media only screen and (width >= 375px) {
+  #footer {
+    top: 9px;
+  }
   .footer .footer-logo img {
-    top: 18px;
-    max-width: 6rem;
+    top: 14px;
+    max-width: 5rem;
   }
   .footer .footer-logo .footer-logo-heading {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .footer .copy > p {
     margin-top: 1.4rem;
   }
 }
 
+// iphone12 390 x 844
+@media only screen and (width >= 390px) {
+  #footer {
+    top: -39px;
+  }
+}
+
 // iphoneXR 414 x 896, Pixel7 412 x 915
-// @media only screen and (width >= 412px) {
+// @media only screen and (width >= 414px) {
+
 // }
 
 // iphone14 pro max 430 x 932
-// @media only screen and (width >= 430px) {
-// }
+@media only screen and (width >= 430px) {
+  .mars {
+    margin-top: 8rem;
+  }
+}
 
 // surface DUO 540 x 720
 @media only screen and (width >= 540px) {
@@ -136,27 +150,33 @@
 
 // ipad Mini 768 x 1024
 @media only screen and (width >= 768px) {
+    // #footer {
+    //   margin-top: 20rem;
+    // }
   .footer .footer-logo img {
-    max-width: 7rem;
-    top: 23px;
+    max-width: 10rem;
+    top: 35px;
   }
   .footer .footer-logo .footer-logo-heading {
-    font-size: 4.4rem;
+    font-size: 7.4rem;
+  }
+  .footer .social a > i {
+    font-size: 4.5rem;
   }
 }
 
 // ipad Air 820 x 1180
 @media only screen and (width >= 820px) {
-  .footer .footer-logo img {
-    max-width: 7rem;
-    top: 24px;
-}
-  .footer .footer-logo .footer-logo-heading {
-    font-size: 5rem;
-  }
-  .footer .social a > i {
-    font-size: 3.5rem;
-  }
+//   .footer .footer-logo img {
+//     max-width: 7rem;
+//     top: 24px;
+// }
+  // .footer .footer-logo .footer-logo-heading {
+  //   font-size: 5rem;
+  // }
+  // .footer .social a > i {
+  //   font-size: 3.5rem;
+  // }
 }
 
 // ipad Pro 1024 x 1366

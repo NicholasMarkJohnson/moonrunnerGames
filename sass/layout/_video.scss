@@ -1,3 +1,7 @@
+#displayNone {
+  display: none;
+}
+
 .video-wrapper {
   position: relative;
   display: flex;
@@ -82,9 +86,10 @@
   }
   .video-wrapper {
     width: 120%;
+    margin-top: 1rem;
 
     & video#video {
-      height: 35rem;
+      height: 44rem;
     }
     & #cover-img {
       min-width: 78%;
@@ -93,6 +98,7 @@
 
   .controls {
     width: 96%;
+    margin-top: -1px;
 
     & .btn-video {
       font-size: 1rem;
@@ -104,31 +110,34 @@
   }
 }
 
-// @media only screen and (width >= 360px) and (width < 375px) {
-// }
+// Galaxy S9 320 x 658, Galaxy Z fold 5 344 x 822, iphone 4,5 320px
+@media only screen and (width >= 320px) {
+  .video-wrapper {
+   
+    video#video {
+      height: 28rem;
+    }
+  }
+}
 
-// @media only screen and (width >= 375px) and (width < 397px) {
-// }
+// iphone12 390 x 844
+@media only screen and (width >= 390px) {
+  .video-wrapper {
+    margin-top: 4rem;
 
-// @media only screen and (width >= 397px) and (width < 600px) {
-// }
+    video#video {
+      height: 40rem;
+    }
+  }
+}
 
-// /* Small devices (portrait tablets and large phones, 600px and up) */
-// @media only screen and (width >= 600px) and (width < 768px) {
-// }
+// iphoneXR 414 x 896, Pixel7 412 x 915
+@media only screen and (width >= 412px) {
+  .video-wrapper {
+    margin-top: 4rem;
 
-// /* Medium devices (landscape tablets, 768px and up) */
-// @media only screen and (width >= 768px) and (width < 992px) {
-// }
-
-// /* Large devices (laptops/desktops, 992px and up) */
-// @media only screen and (width >= 992px) {
-// }
-
-// /* Extra large devices (large laptops and desktops, 1200px and up) */
-// @media only screen and (width >= 1160px) {
-// }
-
-// // Hamburger max-width 1000px
-// @media (width < 1000px) {
-// }
+    video#video {
+      height: 40rem;
+    }
+  }
+}
