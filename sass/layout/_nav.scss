@@ -1,0 +1,173 @@
+.nav {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  background-color: $color-bluNav;
+  display: flex;
+  min-width: 100%;
+  max-height: 25rem;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  // background-image: linear-gradient(to right, #312e2e, #312e2e);
+
+  & .nav-btns .nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+
+    & .nav-item a.nav-btn {
+      transform: translate(25%, 25%);
+      color: #001B40;
+    }
+
+    & .nav-item a#active {
+      cursor: default;
+      box-shadow: none;
+    }
+  }
+
+  & .nav-logo {
+    min-width: 10%;
+
+    & a {
+      text-decoration: none;
+    }
+
+    & img.mascott {
+      max-width: 5rem;
+      position: absolute;
+      top: 12px;
+      left: 13.5rem;
+    }
+
+    & .nav-logo-heading {
+      color: $color-yellowMoonReColor;
+      line-height: 1;
+      text-align: center;
+      font-size: 24px;
+    }
+  }
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger__nav-menu {
+  display: none;
+}
+
+.bar {
+  display: block;
+  background: $color-wht;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+// Media Queries
+
+@media (width < 1000px) {
+  .nav .nav-btns ul.nav-menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    // margin: 1rem 1.5rem;
+    z-index: 100;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translatey(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translatey(-8px) rotate(-45deg);
+  }
+
+  .nav__navBar .hamburger__nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    bottom: 0;
+    gap: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: $color-burgBgGry;
+    background-image: url("https://assets.codepen.io/1538474/star.svg"), linear-gradient(to bottom, #05007A, #4D007D);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s ease-in;
+    z-index: 99;
+
+    & .hamburger__nav-item {
+      margin: 16px 0;
+      list-style: none;
+
+      a.nav-link {
+        position: relative;
+        display: block;
+        color: transparent;
+        -webkit-text-stroke: 1px $color-wht;
+        font-size: 80px;
+        font-weight: 900;
+        text-decoration: none;
+        margin: 0 2rem;
+        line-height: 1;
+      }
+
+      a:before,
+      a:after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+      }
+
+      a:hover:before {
+        // color: $color-burgRed;
+        color: $color-blueShoe;
+        z-index: 1;
+        -webkit-text-stroke: 1px $color-blk;
+        transform: translate(10px, -10px);
+      }
+
+      a:hover:after {
+        // color: $color-burgBlu;
+        color: $color-yellowMoonReColor;
+
+        z-index: 2;
+        -webkit-text-stroke: 1px $color-blk;
+        transform: translate(20px, -20px);
+      }
+
+      a:hover {
+        color: $color-wht;
+        -webkit-text-stroke: 1px $color-blk;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+.nav__navBar .hamburger__nav-menu.active {
+  right: 0;
+}
+
+// ipad Pro 1024 x 1366
+@media only screen and (width >= 1024px) {
+  .nav {
+    margin-bottom: 6rem;
+  }
+}

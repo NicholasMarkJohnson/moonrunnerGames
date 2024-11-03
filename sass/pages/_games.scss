@@ -1,0 +1,58 @@
+.game-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: $color-bluNav;
+  // padding: 2rem 0;
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
+
+  .game-section-title {
+    font-family: "Titan One", cursive;
+    font-size: 6rem;
+    display: flex;
+  }
+}
+
+@media only screen and (width >= 200px) {
+  .game-section .game-section-title {
+    font-size: 0;
+  }
+}
+
+@media only screen and (width >= 1400px) {
+  .mars__margin-top {
+    margin-top: 4rem;
+  }
+}
+
+
+
+
+// @media only screen and (width >= 375px) and (width < 397px) {
+// }
+
+// @media only screen and (width >= 397px) and (width < 600px) {
+// }
+
+// /* Small devices (portrait tablets and large phones, 600px and up) */
+// @media only screen and (width >= 600px) and (width < 768px) {
+// }
+
+// /* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (width >= 768px) and (width < 992px) {
+// }
+
+// /* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (width >= 992px) {
+// }
+
+// /* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (width >= 1160px) {
+// }
+
+// // Hamburger max-width 1000px
+// @media (width < 1000px) {
+// }

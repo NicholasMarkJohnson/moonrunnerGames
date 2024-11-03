@@ -1,0 +1,373 @@
+*,
+*:focus,
+*:hover {
+  outline: none;
+}
+
+.container__form {
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+  // padding: 1em;
+  position: relative;
+  z-index: 90;
+}
+
+.wrapper {
+  box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+  margin: 1rem auto;
+}
+
+.wrapper > * {
+  padding: 1rem;
+}
+
+.contact {
+  background: #edf6f7;
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+
+  & h2.contactUs {
+    align-self: center;
+    color: transparent;
+    font-weight: bold;
+    -webkit-text-stroke: 1px $color-wht;
+    font-size: 6.5rem;
+    line-height: 1;
+  }
+}
+
+/*form styles*/
+
+.contact form {
+  & .form__top-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    padding: 1rem 1rem 0;
+  }
+
+  & .form__bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+
+    & .form-control button {
+      margin-top: 2rem;
+    }
+  }
+
+  & .form-control {
+    position: relative;
+    display: grid;
+    margin-bottom: 1.5rem;
+
+    &-submit {
+      margin-bottom: 0;
+    }
+
+    & input::placeholder {
+      color: $color-wht;
+      opacity: 1;
+      font-weight: 100;
+    }
+  }
+
+  & .form-control label {
+    color: $color-grey;
+    display: block;
+    margin-left: 0.2rem;
+    font-weight: bold;
+    font-weight: 100;
+  }
+
+  & .form-control input {
+    border: 2px solid $color-drkBlueOutline;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+
+  & .form-control input:focus {
+    outline: 0;
+    border-color: $color-wht;
+  }
+
+  & .form-control textarea {
+    width: 100%;
+    padding: 1em;
+    border: 2px solid $color-drkBlueOutline;
+    border-radius: 5px;
+    grid-column: 1/2;
+    font-size: 1.6rem;
+    font-family: inherit;
+
+    &::placeholder {
+      color: $color-wht;
+    }
+  }
+
+  & .form-control textarea:focus {
+    outline: 0;
+    border-color: $color-wht;
+  }
+
+  & .form-control.success input {
+    border-color: $color-playGrn;
+  }
+
+  & .form-control.error input {
+    border-color: $color-stopRed;
+  }
+
+  & .form-control.success textarea {
+    border-color: $color-playGrn;
+  }
+
+  & .form-control.error textarea {
+    border-color: $color-stopRed;
+  }
+
+  & .form-control small {
+    color: $color-stopRed;
+    position: absolute;
+    bottom: -2rem;
+    left: 0.2rem;
+    visibility: hidden;
+  }
+
+  & .form-control.error small {
+    visibility: visible;
+  }
+
+  & .form-control button {
+    cursor: pointer;
+    background-color: $color-blueShoe;
+    border: 2px solid $color-drkBlueOutline;
+    border-radius: 0.4rem;
+    color: #fff;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1rem;
+    width: 100%;
+    grid-column: 1/2;
+
+    &:hover,
+    &:focus {
+      color: white;
+      background: $color-bgBlu1;
+      cursor: pointer;
+      transition: background-color 2s ease-out;
+    }
+  }
+}
+
+@media screen and (width = 320px) and (height = 568px) {
+  .contact h2.contactUs {
+    text-align: center;
+  }
+  .footer .footer-logo .footer-logo-heading {
+    font-size: 3rem;
+    position: relative;
+    top: 9px;
+  }
+  .footer .footer-logo img {
+    top: 23px;
+    right: 2px;
+  }
+}
+
+@media screen and (width = 375px) and (height = 667px) {
+  .footer .footer-logo .footer-logo-heading {
+    font-size: 3.3rem;
+    position: relative;
+    top: 9px;
+  }
+  .footer .footer-logo img {
+    top: 23px;
+    right: 2px;
+  }
+}
+
+
+@media screen and (width >= 320px) and (width < 750px){
+  .container__animation .logo__float {
+    animation-iteration-count: 1;
+  }
+  .container__form {
+    margin: -1rem 0 -1rem !important;
+  }
+  .container__form .contact {
+    // border-radius: 0;
+    background-color: transparent;
+  }
+  .contact form .form__top-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 1.6rem;
+  }
+  .contact form .form-control small {
+    color: $color-wht;
+  }
+  .contact form .form-control label {
+    color: $color-wht;
+    font-size: 2.5rem;
+    line-height: 1.4;
+  }
+  .contact form .form-control input {
+    border: 2px solid $color-borderLabelBlu;
+    background-color: $color-blueShoe;
+    color: white;
+    font-size: 2rem;
+  }
+  .contact form .form-control textarea {
+    width: 100%;
+    padding: 1em;
+    border: 2px solid $color-borderLabelBlu;
+    background-color: $color-blueShoe;
+    color: white;
+    font-size: 2rem;
+  }
+  .contact form .form-control button {
+    border: 2px solid #fff;
+    font-size: 2rem;
+  }
+  .contact h2.contactUs {
+    align-self: center;
+    // color: $color-blueShoe;
+    font-size: 6.5rem;
+    font-weight: bold;
+  }
+}
+
+@media screen and (width >= 320px) and (width < 339px){
+  .contact h2.contactUs {
+    font-size: 5.5rem;
+  }
+}
+
+@media screen and (width = 360px) and (height <= 800px) {
+  .footer .footer-logo .footer-logo-heading {
+    font-size: 3.2rem;
+  }
+  .footer .footer-logo img {
+    top: 14px;
+    right: 2px;
+  }
+}
+
+@media screen and (width = 375px) and (height = 812px) {
+  .footer .footer-logo .footer-logo-heading {
+    font-size: 3.2rem;
+  }
+  .footer .footer-logo img {
+    top: 14px;
+    right: 2px;
+  }
+}
+
+@media screen and (width = 384px) and (height <= 854px) {
+  .footer .footer-logo .footer-logo-heading {
+    font-size: 3.5rem;
+  }
+  .footer .footer-logo img {
+    top: 16px;
+    right: 2px;
+  }
+}
+
+@media screen and (width >= 768px) and (height >= 1024px) {
+  .contact form .form__top-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (width >= 768px) {
+  .container__form .contact {
+    // border-radius: 0;
+    background-color: transparent;
+  }
+  .container__form .wrapper {
+    box-shadow: none;
+  }
+  .contact h2.contactUs {
+    align-self: center;
+    font-size: 6.5rem;
+    font-weight: bold;
+    -webkit-text-stroke: 2px $color-wht;
+  }
+  .contact form .form-control small {
+    color: $color-wht;
+  }
+  .contact form .form-control label {
+    color: $color-wht;
+    font-size: 2.5rem;
+    line-height: 1.4;
+    margin-bottom: 1px;
+  }
+  .contact form .form-control input {
+    border: 2px solid $color-borderLabelBlu;
+    background-color: $color-blueShoe;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  .contact form .form-control textarea {
+    width: 100%;
+    padding: 1em;
+    border: 2px solid $color-borderLabelBlu;
+    background-color: $color-blueShoe;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .contact form .form-control button {
+    border: 2px solid #fff;
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (width >= 1400px) {
+  body > section#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: inherit !important;
+  }
+
+  .mars {
+    position: relative;
+    height: 28vmin;
+  }
+
+  #mars__contact {
+    width: 156%;
+    left: -203px;
+    height: 18rem;
+    margin-top: 4rem;
+  }
+
+  .spaceship {
+    bottom: -4vmin;
+    width: 24rem;
+  }
+
+  #footer {
+    margin-top: 3rem;
+  }
+
+  .footer .footer-logo img {
+    top: 14px;
+}
+
+  .footer .footer-logo .footer-logo-heading {
+    font-size: 3rem;
+}
+
+  .footer .social {
+    width: 50%;
+  }
+}

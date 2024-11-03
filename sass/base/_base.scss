@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  /* Defines what 1REM is*/
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.7;
+  letter-spacing: 0.5px;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img,
+picture,
+video {
+  max-width: 100%;
+  display: block;
+}

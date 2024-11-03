@@ -1,0 +1,159 @@
+/* -------------------Buttons------------------- */
+.btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8rem;
+    transition: all 0.2s;
+    position: relative;
+  }
+
+  // Hero Btn
+  &-white {
+    background-color: $color-wht;
+    // color: $color-midBlue;
+    color: $color-drkBlueOutline;
+
+    &::after {
+      background-color: $color-wht;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba($color-blk, 0.3);
+
+    &::after {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
+  // Goes down on click
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba($color-blk, 0.2);
+  }
+  // Pulse effect
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 8rem;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  // Video Btn
+  &-video {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 1rem;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+}
+
+// Hero Btn
+.hero-btn {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  width: 10rem;
+  text-align: center;
+}
+
+// About Btn
+.about-btn {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  width: 16.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+
+  @media only screen and (width >= 200px) and (width <= 745px) {
+    font-size: 1.6rem;
+    width: 13rem;
+  }
+
+  @media only screen and (width >= 745px) {
+    font-size: 1.9rem;
+    width: 12rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+// Nav btn
+.nav-btns {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  line-height: 1.5;
+
+  & .nav-btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 1.6rem;
+    width: 8.5rem;
+    margin-right: 3rem;
+  }
+}
+@media (max-width: 1000px) {
+  .nav-btns {
+    align-self: center;
+  }
+}
+
+// Active
+#active {
+  outline: 0.2rem solid $color-wht;
+  // background-color: rgba(33, 140, 204, 0.8);
+  color: $color-wht;
+}
+
+@media only screen and (width >= 200px) {
+}
+
+@media only screen and (width >= 360px) and (width < 375px) {
+}
+
+@media only screen and (width >= 375px) and (width < 397px) {
+}
+
+@media only screen and (width >= 390px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (width >= 600px) and (width < 768px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (width >= 768px) and (width < 992px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (width >= 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (width >= 1160px) {
+}
+
+// Hamburger max-width 1000px
+@media (width < 1000px) {
+}

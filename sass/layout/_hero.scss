@@ -1,0 +1,350 @@
+body {
+  background-image: url("/img/landingPage/star.svg"), linear-gradient(to bottom, #05007A, #4D007D);
+  min-height: 100%;
+  // overflow: hidden;
+  margin: 0 auto;
+  background-attachment: fixed;
+}
+
+body#body-hero {
+  min-height: 100vmin;
+  overflow: hidden;
+}
+
+body > section.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+// Footer
+main {
+  margin-top: 5rem;
+}
+
+.mars {
+  border-radius: 0.4rem;
+  left: 0;
+  right: 0;
+  bottom: -13px;
+  position: relative;
+  height: 27vmin;
+  background: url("https://assets.codepen.io/1538474/mars.svg") no-repeat bottom center;
+  background-size: cover;
+}
+  @media (min-width: 320px) {
+    .mars {
+      height: 54vmin;
+      // margin-top: 1rem;
+    }
+}
+
+// Spaceships
+.spaceship__container {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  bottom: -95px;
+  right: 1px;
+}
+
+.spaceship {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+// Media Queries
+
+// Galaxy Z fold 5 344 x 822, iphone 4,5 320px
+@media only screen and (min-width: 320px) {
+  body#body-hero {
+    min-height: 100vmin;
+    overflow: hidden;
+  }
+  .spaceship {
+    width: 28vmin;
+    bottom: 16vmin;
+  }
+}
+
+// Iphone SE 2016 320px x 568px
+
+// Samsung galaxy S9+ 320px x 658px
+@media only screen and (min-width: 320px) and (min-height: 658px){
+  .mars{
+    bottom: 0;
+  }
+  #footer {
+    margin-top: 0rem;
+  }
+}
+
+// Samsung galaxy S8+
+@media only screen and (min-width: 320px) and (min-height: 740px) {
+  // .mars{
+  //   bottom: 0;
+  // }
+
+  #footer {
+    margin-top: 7rem;
+  }
+}
+
+// Galaxy Z-Fold 344px x 882px
+@media only screen and (min-width: 344px) {
+  #footer {
+    margin-top: 18rem;
+  }
+}
+
+// Samsung Galaxy S8 360 x 740
+@media only screen and (min-width: 360px) {
+  #footer {
+    margin-top: 3rem;
+  }
+}
+
+// iphoneSE 375 x 667, 
+@media only screen and (min-width: 375px) {
+  body#body-hero {
+    height: 100vmin;
+    overflow: hidden;
+  }
+  .mars {
+    bottom: 0;
+  }
+  .spaceship {
+    bottom: 11vmin;
+  }
+  #footer {
+    margin-top: 0;
+  }
+}
+
+// iphoneX 375 x 812
+@media only screen and (min-width: 375px) and (min-height: 812px) {
+  // main {
+  //   margin-top: 1rem;
+  // }
+  #footer {
+    // margin-top: 10rem;
+    margin-top: 0;
+  }
+}
+
+// iphone12 390 x 844
+@media only screen and (min-width: 390px) {
+//   main {
+//     margin-top: 2rem;
+// }
+  #footer {
+    margin-top: 5rem;
+  }
+}
+
+// Pixel 5
+@media only screen and (min-width: 393px) {
+  // main {
+  //     margin-top: 2rem; 
+  // }
+}
+
+// Pixel7 412 x 915
+@media only screen and (min-width: 412px) and (min-height: 915px) {
+  .spaceship {
+    bottom: 9vmin;
+  }
+  .mars {
+    margin-top: 9rem;
+  }
+  #footer {
+    margin-top: 12rem;
+  }
+}
+
+// iphoneXR 414 x 896
+@media only screen and (min-width: 414px) {
+  .spaceship {
+    bottom: 9vmin;
+  }
+  .mars {
+    margin-top: 5rem;
+    bottom: -1.2rem;
+  }
+  #footer {
+    margin-top: 10rem;
+  }
+}
+
+// iphone14 pro max 430 x 932
+@media only screen and (min-width: 430px) {
+  .spaceship {
+    bottom: 8vmin;
+  }
+  .mars{
+    margin-top: 7.8rem;
+  }
+  #footer{
+    margin-top: 13rem;
+  }
+}
+
+// surface DUO 540 x 720
+@media only screen and (min-width: 540px) {
+  .spaceship {
+    width: 14rem;
+    bottom: 6vmin;
+  }
+  .mars {
+    height: 26vmin;
+  }
+  #footer {
+    margin-top: 3rem;
+  }
+}
+
+// ipad Mini 768 x 1024
+@media only screen and (min-width: 768px) {
+  .spaceship {
+    width: 19rem;
+  }
+  .mars {
+    height: 29vmin;
+    margin-top: 13rem;
+    // bottom: 0;
+  }
+  .footer .footer-logo .footer-logo-heading {
+    font-size: 2.4rem;
+  }
+  .footer .social a > i {
+    font-size: 2.2rem;
+  }
+  .footer .footer-logo img {
+    max-width: 5rem;
+    top: 11px;
+  }
+  #footer {
+    margin-top: 18rem;
+  }
+}
+
+// ipad Air 820 x 1180
+@media only screen and (min-width: 820px) {
+  .spaceship {
+    width: 20rem;
+  }
+
+  .mars {
+    height: 29vmin;
+    margin-top: 28rem;
+  }
+
+  #footer {
+    margin-top: 33rem;
+  }
+}
+
+// ipad Mini 1024 x 768 sideways
+@media only screen and (min-width: 1024px) and (min-height: 768px) {
+  .mars {
+    height: 20vmin;
+  }
+}
+
+// ipad Pro 1024 x 1366
+@media only screen and (min-width: 1024px) and (min-height: 1366px) {
+  .mars {
+    margin-top: 14rem;
+  }
+  .spaceship {
+    bottom: -4vmin;
+    width: 24rem;
+  }
+  #footer {
+    margin-top: 19rem;
+  }
+}
+
+// ipad Pro 1366px x 1024px sideways
+@media only screen and (min-width: 1366px) and (min-height: 1024px) {
+  .mars {
+    margin-top: 3rem;
+  }
+  .spaceship {
+    bottom: -4vmin;
+    width: 24rem;
+  }
+  #footer {
+    margin-top: 40rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  body#body-hero {
+    overflow-y: hidden;
+  }
+
+  #home {
+    align-items: normal;
+  }  
+  
+  nav.nav {
+      margin-bottom: 2rem;
+  }
+
+  .video-wrapper,
+  .controls {
+    margin: auto;
+  }
+  
+  main {
+    margin-top: 0;
+    position: relative;
+    bottom: 0;
+    height: 2rem;
+  }
+
+  .mars {
+    position: relative;
+    height: 24vmin;
+    margin-top: 1rem;
+    bottom: 0;
+  }
+
+  .spaceship {
+    bottom: -4vmin;
+    width: 24rem;
+  }
+
+  #footer {
+    margin-top: 3rem;
+  }
+
+  .footer .footer-logo img {
+    top: 14px;
+}
+
+  .footer .footer-logo .footer-logo-heading {
+    font-size: 3rem;
+}
+
+  .footer .social {
+    width: 50%;
+  }
+}
+ 
+
+// /* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (width >= 768px) and (width < 992px) {}
+  
+
+// /* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (width >= 992px) {}
+
+  
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (width >= 1160px) {}
+ 

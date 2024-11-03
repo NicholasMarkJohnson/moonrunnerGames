@@ -1,0 +1,204 @@
+.footer {
+  align-items: center;
+  border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0 auto 1rem;
+  max-height: 24.3rem;
+  padding: 1rem 2rem 0;
+  position: relative;
+
+  & .footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // margin-top: 1rem;
+
+    img {
+      max-width: 5rem;
+      top: 19px;
+      position: relative;
+    }
+
+    & .footer-logo-heading {
+      color: $color-yellowMoonReColor;
+      line-height: 1;
+      text-align: center;
+      // margin-top: 6rem;
+      font-size: 3rem;
+    }
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+
+    & a > i {
+      display: inline-block;
+      margin: 1rem 0;
+      font-size: 2.5rem;
+
+      &:hover {
+        cursor: pointer;
+        transform: translateY(-3px);
+        box-shadow: 0 15px 25px rgba($color-blk, 0.3);
+
+        &::after {
+          transform: scale(1.5);
+          opacity: 0;
+        }
+      }
+      // Goes down on click
+      &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 10px 20px rgba($color-blk, 0.2);
+      }
+    }
+
+    .footer-btns {
+      margin: 0 2rem;
+      &:first-child {
+        color: $color-slam;
+      }
+      &:nth-child(2) {
+        color: $color-lime;
+      }
+      &:nth-child(3) {
+        color: $color-pastelRed;
+      }
+      &:last-child {
+        color: $color-violet;
+      }
+    }
+  }
+
+  .copy {
+    color: $color-drkGry;
+    text-align: center;
+  }
+}
+
+@media only screen and (width >= 200px) and (width < 800px) {
+  .footer {
+    & .footer-logo {
+      margin-top: 0;
+    }
+    & .copy > p {
+      line-height: 1;
+      font-size: 1rem;
+    }
+  }
+}
+
+// Galaxy S9 320 x 658, Galaxy Z fold 5 344 x 822, iphone 4,5 320px
+@media only screen and (width >= 320px) {
+  .footer .footer-logo img {
+    top: 14px;
+  }
+}
+
+// iphoneSE 375 x 667, iphoneX 375 x 812
+@media only screen and (width >= 375px) {
+  #footer {
+    top: 9px;
+  }
+  .footer .footer-logo img {
+    top: 14px;
+    max-width: 5rem;
+  }
+  .footer .footer-logo .footer-logo-heading {
+    font-size: 3rem;
+  }
+  // .footer .copy > p {
+  //   margin-top: 1.4rem;
+  // }
+}
+
+// iphone12 390 x 844
+@media only screen and (width >= 390px) {
+  #footer {
+    top: -39px;
+    margin-top: 6rem;
+  }
+}
+
+// iphoneXR 414 x 896, Pixel7 412 x 915
+@media only screen and (width >= 412px) {
+  #footer {
+    margin-top: 10rem;}
+}
+
+// iphone14 pro max 430 x 932
+@media only screen and (width >= 430px) {
+  .mars {
+    margin-top: 8rem;
+  }
+}
+
+// surface DUO 540 x 720
+@media only screen and (width >= 540px) {
+  .footer .footer-logo img {
+    max-width: 4rem;
+    top: 13px;
+  }
+  .footer .footer-logo .footer-logo-heading {
+    font-size: 2.8rem;
+  }
+}
+
+// ipad Mini 768 x 1024
+@media only screen and (width >= 768px) {
+    // #footer {
+    //   margin-top: 20rem;
+    // }
+  .footer .footer-logo img {
+    max-width: 10rem;
+    top: 35px;
+  }
+  .footer .footer-logo .footer-logo-heading {
+    font-size: 7.4rem;
+  }
+  .footer .social a > i {
+    font-size: 4.5rem;
+  }
+}
+
+// ipad Air 820 x 1180
+@media only screen and (width >= 820px) {
+//   .footer .footer-logo img {
+//     max-width: 7rem;
+//     top: 24px;
+// }
+  // .footer .footer-logo .footer-logo-heading {
+  //   font-size: 5rem;
+  // }
+  // .footer .social a > i {
+  //   font-size: 3.5rem;
+  // }
+}
+
+// ipad Pro 1024 x 1366
+@media only screen and (width >= 1024px) {
+  .footer .footer-logo img {
+    max-width: 10rem;
+    top: 29px;
+  }
+  .footer .footer-logo .footer-logo-heading {
+    font-size: 6rem;
+  }
+  .footer .social a > i {
+    font-size: 4.5rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (width >= 1160px) {
+}
+
+// Hamburger max-width 1000px
+@media (width < 1000px) {
+}

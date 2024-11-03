@@ -1,0 +1,294 @@
+#displayNone {
+  display: none;
+}
+
+.video-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  // margin-top: 2rem;
+
+  & video#video {
+    height: 35rem;
+    border: 4px solid $color-lghtGry;
+  }
+
+  & .cover-img {
+    position: absolute;
+    // left: 0;
+    pointer-events: none;
+    width: 79%;
+    height: auto;
+  }
+
+  & .cover-img.hidden {
+    display: none;
+  }
+
+  & .screen {
+    cursor: pointer;
+    width: 80%;
+    background-color: $color-blk !important;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+}
+
+.controls {
+  background-color: $color-drkGry;
+  color: $color-wht;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border: 4px solid $color-lghtGry;
+  border-top: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 64%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  // iphoneX 375 x 812
+@media only screen and (max-width: 375px) and (max-height: 812px) {
+  margin-bottom: 0;
+}
+
+  & #progress {
+    width: 75%;
+    margin: 0 1rem;
+  }
+
+  & .fa-play {
+    color: $color-playGrn;
+  }
+
+  & .fa-stop {
+    color: $color-stopRed;
+  }
+
+  & .fa-pause {
+    color: $color-wht;
+  }
+
+  & .timestamp {
+    color: $color-wht;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (width >= 200px) and (width < 840px) {
+  body {
+    padding: 1rem;
+  }
+  .video-wrapper {
+    width: 120%;
+    margin-top: 1rem;
+
+    & video#video {
+      height: 44rem;
+    }
+    & #cover-img {
+      min-width: 78%;
+    }
+  }
+
+  .controls {
+    width: 96%;
+    margin-top: -1px;
+
+    & .btn-video {
+      font-size: 1rem;
+    }
+
+    & #progress {
+      min-width: 13rem;
+    }
+  }
+}
+
+// Galaxy S9 320 x 658, Galaxy Z fold 5 344 x 822, iphone 4,5 320px
+@media only screen and (width >= 320px) {
+  .video-wrapper {
+   
+    & video#video {
+      height: 28rem;
+    }
+  }
+}
+
+// Galaxy Z-Fold 344px x 882px
+@media only screen and (width >= 344px) {
+  .video-wrapper {
+    
+
+    & video#video {
+      // margin-top: 5rem;
+      margin-top: 2rem;
+    }
+  }
+}
+
+// galaxy Z-flip 3 360px x 880px
+@media only screen and (min-width: 360px) and (min-height: 880px) {
+  .video-wrapper video#video {
+    margin-top: 5rem;
+    height: 42rem;
+  }
+}
+
+// Iphone SE 375px x 667px
+@media only screen and (width >= 375px) {
+  .video-wrapper {
+
+    & video#video {
+      margin-top: 0;
+    }
+  }
+}
+
+// Galaxy S24 Ultra 384px x 832px
+@media only screen and (width >= 384px) {
+  .video-wrapper {
+
+    & video#video {
+      margin-top: 0;
+      height: 42rem;
+    }
+  }
+}
+
+// iphone12 390 x 844
+@media only screen and (width >= 390px) {
+  .video-wrapper {
+    // margin-top: 4rem;
+    margin-top: 2rem;
+
+    & video#video {
+      height: 30rem;
+    }
+  }
+}
+
+// pixel5 393 x 851
+// @media only screen and (width >= 393px) {
+//   .video-wrapper {
+//     // margin-top: 4rem;
+//     margin-top: 2rem;
+
+//     & video#video {
+//       height: 40rem;
+//     }
+//   }
+// }
+
+// iphoneXR 414 x 896, Pixel7 412 x 915
+@media only screen and (width >= 412px) {
+  .video-wrapper {
+    margin-top: 4rem;
+
+    & video#video {
+      height: 40rem;
+    }
+  }
+}
+
+// Surface Duo 540px x 720px
+@media only screen and (width >= 540px) {
+  .video-wrapper {
+    margin-top: -1rem;
+
+    & video#video {
+      height: 30rem;
+    }
+  }
+}
+
+// ipad mini 768px x 1024px
+@media only screen and (width >= 768px) {
+  .video-wrapper {
+    margin-top: 8rem;
+
+    & video#video {
+      height: 40rem;
+    }
+  }
+}
+
+// ipad mini 820px x 1180px
+@media only screen and (width >= 820px) {
+  .video-wrapper {
+    margin-top: 8rem;
+
+    & video#video {
+      height: 40rem;
+      width: 66.5%;
+    }
+  }
+  .controls {
+    width: 80%;
+  }
+}
+
+// Asus Zenbook Fold 853px x 1280px
+@media only screen and (width >= 853px) {
+  .video-wrapper {
+
+    & video#video {
+      height: 40rem;
+      width: 100%;
+    }
+  }
+  #footer {
+    margin-top: 34rem;
+  }
+}
+
+// Surface pro 7 912px x x1368px
+@media only screen and (width >= 912px) {
+  .video-wrapper video#video {
+    width: 100%;
+  }
+  #footer {
+    margin-top: 40rem;
+  }
+}
+
+// ipad Mini 1024 x 768 sideways
+@media only screen and (width >= 1024px) and (height >= 768px) {
+  // .video-wrapper {
+  //   margin-top: -3rem;
+  // }
+
+  // #footer {
+  //   margin-top: 1rem;
+  // }
+}
+
+// ipad Pro 1024 x 1366
+@media only screen and (width >= 1024px) {
+  .video-wrapper {
+    margin-top: 0rem;
+
+    & video#video {
+      height: 76rem;
+      width: 100%;
+    }
+  }
+
+  #footer {
+    margin-top: 19rem;
+  }
+}
+
+@media only screen and (width >= 1200px) {
+  .video-wrapper {
+    margin-top: 0rem;
+
+    & video#video {
+      height: 38rem;
+    }
+  }
+}
+
